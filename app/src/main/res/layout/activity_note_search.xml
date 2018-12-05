@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gome.note.ui.search.NoteSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rt_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_radius_shape"
+            android:minHeight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_search"
+                android:layout_toStartOf="@+id/image_clear"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_tag_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp"/>
+
+                <com.gome.note.view.NotesEditText
+                    android:id="@+id/et_search_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search_label_title"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:maxHeight="37dp"
+                    android:minHeight="30dp"
+                    android:singleLine="true"
+                    android:textColor="@color/font_black_2"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="13sp"
+                    android:theme="@style/NoActionBar_Theme"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_gome_icon_settings_search"
+                android:contentDescription="@string/activity_search_note"/>
+
+            <ImageView
+                android:id="@+id/image_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/launch_folder_edit_delete"
+                android:contentDescription="@string/activity_search_clear"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/font_blue_1"
+            android:textSize="@dimen/common_textsize_30px"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/actionBar_bottom_line"/>
+
+    <TextView
+        android:id="@+id/tv_search_activity_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/recommend_label_title"
+        android:textSize="@dimen/common_textsize_24px"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-60dp"
+            android:drawablePadding="@dimen/px_20"
+            android:drawableTop="@drawable/ic_gome_sys_ic_memo"
+            android:gravity="center"
+            android:text="@string/no_search_result"
+            android:textColor="#33000000"
+            android:textSize="@dimen/common_textsize_30px"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+
+            <com.gome.note.ui.search.view.TagFlowLayout
+                android:id="@+id/tf_tag_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                app:max_select="-1"></com.gome.note.ui.search.view.TagFlowLayout>
+
+        </ScrollView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="91dp">
+
+
+        <LinearLayout
+            android:id="@+id/relaontent_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relaontent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:id="@+id/home_item_tile"
+                        style="@style/TextTitleStyle"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="" />
+
+
+                    <ImageView
+                        android:id="@+id/image_audio"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/ic_gome_icon_record" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/content_title"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textColor="@color/font_black_4"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_noon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/content_title"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/tv_date"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_black_4"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/content_title"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/tv_noon"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_black_4"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center">
+
+                <com.gome.note.view.RoundImageView
+                    android:id="@+id/home_item_icon"
+                    android:layout_width="@dimen/home_photo_width_height"
+                    android:layout_height="@dimen/home_photo_width_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="28dp"
+                    android:scaleType="centerCrop"
+                    card_view:type="round" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/cb_home_item_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:background="@color/actionBar_bottom_line" />
+
+    </FrameLayout>
+
+</RelativeLayout>

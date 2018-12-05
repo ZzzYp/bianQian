@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/delete_label_dialog"
+        android:textColor="@color/font_black_2"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_check_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/font_black_4"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_checkbox"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="#FF2E76FC"
+            android:textSize="13sp" />
+
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="#FF2E76FC"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

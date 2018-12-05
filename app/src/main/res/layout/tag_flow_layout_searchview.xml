@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_tag_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="@dimen/searchview_tag_max_width"
+    android:layout_margin="3dp"
+    android:background="@drawable/tag_bg_shape_for_search_view"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textColor="@color/font_black_2"
+    android:textSize="@dimen/common_textsize_18px"></TextView>

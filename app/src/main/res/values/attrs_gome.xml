@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Formatting note: terminate all comments with a period, to avoid breaking
+     the documentation output. To suppress comment lines from the documentation
+     output, insert an eat-comment element after the comment lines.
+-->
+
+<resources>
+    <attr name="firstDayOfWeek" format="integer" />
+    <declare-styleable name="AlertDialog">
+        <attr name="fullDark" format="reference|color" />
+        <attr name="topDark" format="reference|color" />
+        <attr name="centerDark" format="reference|color" />
+        <attr name="bottomDark" format="reference|color" />
+        <attr name="fullBright" format="reference|color" />
+        <attr name="topBright" format="reference|color" />
+        <attr name="centerBright" format="reference|color" />
+        <attr name="bottomBright" format="reference|color" />
+        <attr name="bottomMedium" format="reference|color" />
+        <attr name="centerMedium" format="reference|color" />
+        <attr name="buttonPanelSideLayout" format="reference" />
+        <attr name="layout" format="reference" />
+        <attr name="listLayout" format="reference" />
+        <attr name="multiChoiceItemLayout" format="reference" />
+        <attr name="singleChoiceItemLayout" format="reference" />
+        <attr name="listItemLayout" format="reference" />
+        <attr name="progressLayout" format="reference" />
+        <attr name="horizontalProgressLayout" format="reference" />
+        <!-- @hide Whether fullDark, etc. should use default values if null. -->
+        <attr name="needsDefaultBackgrounds" format="boolean" />
+        <attr name="useGomeTheme" format="boolean" /><!-- ADD BY LIANG.SUN FOR ALERTDIALOG 20170721 -->
+    </declare-styleable>
+
+	<declare-styleable name="GomeSwitch">
+        <attr name="thumbDrawable" format="reference"/>
+        <attr name="thumbColor" format="color|reference"/>
+        <attr name="thumbMargin" format="dimension|reference"/>
+        <attr name="thumbMarginTop" format="dimension|reference"/>
+        <attr name="thumbMarginBottom" format="dimension|reference"/>
+        <attr name="thumbMarginLeft" format="dimension|reference"/>
+        <attr name="thumbMarginRight" format="dimension|reference"/>
+        <attr name="thumbWidth" format="dimension|reference"/>
+        <attr name="thumbHeight" format="dimension|reference"/>
+        <attr name="thumbRadius" format="dimension|reference"/>
+        <attr name="trackRadius" format="dimension|reference"/>
+        <attr name="trackDrawable" format="reference"/>
+        <attr name="trackColor" format="color|reference"/>
+        <attr name="fadeTrack" format="boolean"/>
+        <attr name="trackMeasureRatio" format="float"/>
+        <attr name="animationDuration" format="integer"/>
+        <attr name="tintColor" format="color|reference"/>
+        <attr name="textOn" format="string"/>
+        <attr name="textOff" format="string"/>
+        <attr name="textMarginH" format="dimension"/>
+        <attr name="autoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+
+    <!-- ============ -->
+    <!-- Alert Dialog styles -->
+    <!-- ============ -->
+    <eat-comment />
+    <!--modify begin by sunliang for add GomeAlertDialog20170601-->
+    <attr name="gomeAlertDialogStyle" format="reference" />
+    <attr name="alertDialogCenterButtons" format="boolean" />
+    <!--modify end by sunliang for add GomeAlertDialog20170601-->
+
+	<!-- ============ -->
+    <!-- Switch styles -->
+    <!-- ============ -->
+    <eat-comment />
+    <!--add begin by wangjian for add GomeSwitch201706021-->
+    <attr name="gomeSwitchStyle" format="reference" />
+    <!--modify end by wangjian for add GomeSwitch201706021-->
+
+    <!-- Left optical inset.
+             @hide Until optical insets are fully supported. -->
+    <attr name="opticalInsetLeft" />
+    <!-- Top optical inset.
+         @hide Until optical insets are fully supported. -->
+    <attr name="opticalInsetTop" />
+    <!-- Right optical inset.
+         @hide Until optical insets are fully supported. -->
+    <attr name="opticalInsetRight" />
+    <!-- Bottom optical inset.
+         @hide Until optical insets are fully supported. -->
+    <attr name="opticalInsetBottom" />
+
+    <declare-styleable name="FloatActionMenuView">
+        <!-- The menu resource to inflate and populate items from. -->
+        <attr name="menu" format="reference"/>
+        <attr name="maxItems" format="integer"/>
+        <attr name="listItemShowIcon" format="boolean"/>
+        <attr name="overflowButtonText" format="string"/>
+        <attr name="overflowButtonIcon" format="reference"/>
+    </declare-styleable>
+
+    <!-- MODIFY BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
+    <attr name="colorControlNormal" format="color" />
+
+    <declare-styleable name="TimePicker">
+        <!-- The layout of the legacy time picker. -->
+        <attr name="legacyLayout" format="reference" />
+        <!-- The layout of the time picker. -->
+    </declare-styleable>
+
+    <attr name="datePickerStyle" format="reference" />
+    <declare-styleable name="DatePicker">
+        <!-- The first year (inclusive), for example "1940".
+             {@deprecated Use minDate instead.} -->
+        <attr name="startYear" format="integer" />
+        <!-- The last year (inclusive), for example "2010".
+             {@deprecated Use maxDate instead.} -->
+        <attr name="endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="spinnersShown" format="boolean" />
+        <!-- Whether the calendar view is shown. -->
+        <attr name="calendarViewShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="minDate" format="string" />
+        <!-- The maximal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="maxDate" format="string" />
+        <!-- The first day of week according to {@link java.util.Calendar}. -->
+        <attr name="firstDayOfWeek" />
+        <!-- @hide The layout of the date picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The layout of the legacy DatePicker. -->
+        <attr name="legacyLayout" />
+        <!-- The background color for the date selector 's day of week. -->
+        <attr name="dayOfWeekBackground" format="color|reference" />
+        <!-- The text color for the date selector's day of week. -->
+        <attr name="dayOfWeekTextAppearance" format="reference" />
+        <!-- The month's text appearance in the date selector. -->
+        <attr name="headerMonthTextAppearance" format="reference" />
+        <!-- The day of month's text appearance in the date selector. -->
+        <attr name="headerDayOfMonthTextAppearance" format="reference" />
+        <!-- The year's text appearance in the date selector. -->
+        <attr name="headerYearTextAppearance" format="reference" />
+        <!-- The background for the date selector. -->
+        <attr name="headerBackground" format="color|reference" />
+        <!-- @hide The selected text color for the date selector. Used as a
+             backup if the text appearance does not explicitly have a color
+             set for the selected state. -->
+        <attr name="headerSelectedTextColor" format="color|reference" />
+        <!-- The list year's text appearance in the list. -->
+        <attr name="yearListItemTextAppearance" format="reference" />
+        <!-- The list year's selected circle color in the list. -->
+        <attr name="yearListSelectorColor" format="color" />
+        <!-- The text color list of the calendar. -->
+        <attr name="calendarTextColor" format="color" />
+        <!-- @hide The selected text color for the calendar. Used as a backup
+             if the text color does not explicitly have a color set for the
+             selected state. -->
+        <attr name="calendarSelectedTextColor" format="color" />
+        <!-- Defines the look of the widget. Prior to the L release, the only choice was
+             spinner. As of L, with the Material theme selected, the default layout is calendar,
+             but this attribute can be used to force spinner to be used instead. -->
+        <attr name="datePickerMode">
+            <!-- Date picker with spinner controls to select the date. -->
+            <enum name="spinner" value="1" />
+            <!-- Date picker with calendar to select the date. -->
+            <enum name="calendar" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <attr name="numberPickerStyle" format="reference" />
+    <declare-styleable name="NumberPicker">
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference"/>
+        <!-- @hide If true then the selector wheel is hidden until the picker has focus. -->
+        <attr name="hideWheelUntilFocused" format="boolean"/>
+    </declare-styleable>
+    <!-- MODIFY END BY LIANG.SUN FOR DATEPICKER 20170620 -->
+    <!-- ADD BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+    <attr name="gomeFloatMenuOverflowStyle" format="reference" />
+    <!-- ADD END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+
+    <!-- Base attributes available to Preference. -->
+    <declare-styleable name="Preference">
+        <!-- The optional icon for the preference -->
+        <attr name="android:icon" />
+        <!-- The key to store the Preference value. -->
+        <attr name="android:key"/>
+        <!-- The title for the Preference in a PreferenceActivity screen. -->
+        <attr name="android:title" />
+        <!-- The summary for the Preference in a PreferenceActivity screen. -->
+        <attr name="android:summary" />
+        <!-- The order for the Preference (lower values are to be ordered first). If this is not
+             specified, the default ordering will be alphabetic. -->
+        <attr name="android:order"/>
+        <!-- When used inside of a modern PreferenceActivity, this declares
+             a new PreferenceFragment to be shown when the user selects this item. -->
+        <attr name="android:fragment" />
+        <!-- The layout for the Preference in a PreferenceActivity screen. This should
+             rarely need to be changed, look at widgetLayout instead. -->
+        <attr name="android:layout" />
+        <!-- The layout for the controllable widget portion of a Preference. This is inflated
+             into the layout for a Preference and should be used more frequently than
+             the layout attribute. For example, a checkbox preference would specify
+             a custom layout (consisting of just the CheckBox) here. -->
+        <attr name="android:widgetLayout"/>
+        <!-- Whether the Preference is enabled. -->
+        <attr name="android:enabled" />
+        <!-- Whether the Preference is selectable. -->
+        <attr name="android:selectable"/>
+        <!-- The key of another Preference that this Preference will depend on.  If the other
+             Preference is not set or is off, this Preference will be disabled. -->
+        <attr name="android:dependency"/>
+        <!-- Whether the Preference stores its value to the shared preferences. -->
+        <attr name="android:persistent" />
+        <!-- The default value for the preference, which will be set either if persistence
+             is off or persistence is on and the preference is not found in the persistent
+             storage.  -->
+        <attr name="android:defaultValue"/>
+        <!-- Whether the view of this Preference should be disabled when
+             this Preference is disabled. -->
+        <attr name="android:shouldDisableView"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchPreference">
+        <!-- The summary for the Preference in a PreferenceActivity screen when the
+             SwitchPreference is checked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead. -->
+        <attr name="android:summaryOn" />
+        <!-- The summary for the Preference in a PreferenceActivity screen when the
+             SwitchPreference is unchecked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead. -->
+        <attr name="android:summaryOff" />
+        <!-- The text used on the switch itself when in the "on" state.
+             This should be a very SHORT string, as it appears in a small space. -->
+        <attr name="android:switchTextOn"/>
+        <!-- The text used on the switch itself when in the "off" state.
+             This should be a very SHORT string, as it appears in a small space. -->
+        <attr name="android:switchTextOff"/>
+        <!-- The state (true for on, or false for off) that causes dependents to be disabled. By default,
+             dependents will be disabled when this is unchecked, so the value of this preference is false. -->
+        <attr name="android:disableDependentsState" />
+    </declare-styleable>
+</resources>

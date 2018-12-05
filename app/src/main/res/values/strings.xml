@@ -1,0 +1,229 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" tools:ignore="MissingTranslation">
+    <string name="app_name">便签</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_history_note">HistoryNoteActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="put_top">stick置顶stick</string>
+    <string name="home_put_top">置顶</string>
+    <string name="home_put_cancel_top">取消置顶</string>
+    <string name="add_pocket_guide">用户引导</string>
+    <string name="lable_type_record">语音备忘</string>
+    <string name="lable_type_record_en">Voice Memos</string>
+    <string name="lable_type_record_cn">语音备忘</string>
+    <string name="note">便签</string>
+
+
+    <!--bottom toolbar-->
+    <string name="dialog_cancel">取消</string>
+    <string name="bottom_create">新建</string>
+    <string name="bottom_camera">拍照</string>
+    <string name="bottom_label_modify">标签修改</string>
+    <string name="bottom_more">更多</string>
+    <string name="bottom_back">返回</string>
+    <string name="bottom_finish">完成</string>
+    <string name="bottom_more_label">标签</string>
+    <string name="bottom_record">录音</string>
+    <string name="bottom_more_history">最近删除</string>
+    <string name="bottom_delete_history">删除</string>
+    <string name="complete">完成</string>
+    <string name="done">完成</string>
+    <!--   -->
+    <string name="edit">编辑</string>
+    <string name="again_set_name">重命名</string>
+    <string name="add_new">新增</string>
+    <string name="all_selected">全选</string>
+    <string name="all_no_selected">全不选</string>
+    <string name="add_labels">添加标签</string>
+    <string name="is_checked">选中</string>
+    <string name="item">项</string>
+    <string name="items">项</string>
+
+    <!--detail-->
+    <string name="detail_finish">完成</string>
+    <string name="detail_create">新建</string>
+    <string name="detail_look">预览</string>
+    <string name="detail_delete">删除</string>
+    <string name="detail_copy">复制</string>
+    <string name="detail_copy_string">复制文字</string>
+    <string name="detail_share">分享</string>
+
+
+    <!--label-->
+    <string name="create">新建</string>
+    <string name="back">返回</string>
+    <string name="create_label">+ 新建标签</string>
+    <string name="date">2017–12–31</string>
+    <string name="create_label_1">新增标签</string>
+    <string name="edit_label_1">标签重命名</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="content_not_null">内容不能为空！</string>
+    <string name="even_not_alert">不再提示</string>
+    <string name="delete_label_dialog">此删除仅针对标签，并不会删除带此标签的内容</string>
+    <string name="label_as_have">此标签已存在!</string>
+    <string name="label_name_not_null">标签内容不能为空</string>
+    <string name="click_save">已保存至便签</string>
+    <string name="add_label">添加标签</string>
+
+    <string name="delete_label">标签删除</string>
+    <string name="image_is_error">图片已被删除或已损坏</string>
+    <string name="audio_is_error">录音文件已被删除或已损坏</string>
+    <string name="file_is_error">文件已被删除或已损坏</string>
+    <string name="stick_label_can_not_delete">置顶标签无法删除</string>
+    <string name="can_not_play_audio_in_calling">通话过程中无法播放录音</string>
+    <string name="edit_text_exceed">最多输入6个字</string>
+    <string name="translation_error">翻译失败</string>
+
+    <!--history-->
+    <string name="history_center_title">最近删除</string>
+    <string name="history_finish_title">完成</string>
+    <string name="history_select_all_title">全选</string>
+    <string name="history_cancel_all_title">取消</string>
+    <string name="history_delete_all_title">以下内容保留30天后将永久删除</string>
+    <string name="history_recover">恢复</string>
+    <string name="history_delete">删除</string>
+    <string name="history_select">选中</string>
+    <string name="history_dialog_cancel">取消</string>
+    <string name="history_dialog_recover">恢复</string>
+    <string name="history_is_recover">是否恢复文档</string>
+    <string name="history_is_recovers">是否恢复文档</string>
+    <string name="history_is_delete">是否彻底删除<xliff:g id="count">%1d</xliff:g>项内容</string>
+    <string name="thorough_delete">彻底删除</string>
+    <string name="history_is_delete_content">彻底删除后,内容将不可恢复</string>
+    <string name="confirm_delete_this_note">确认要彻底删除此项便签吗?</string>
+    <string name="confirm_delete_these_notes">确认要彻底删除此项便签吗?</string>
+    <string name="history_true_delete">确认删除</string>
+    <string name="already_recover_to_home">已恢复到首页</string>
+
+
+    <string-array name="home_default_title_arr">
+        <item> my favorites </item>
+        <item>我的便签</item>
+    </string-array>
+
+    <string name="home_default_title">我的便签</string>
+    <string name="only_img">图片便签</string>
+    <!--add file-->
+    <string name="add_right_type">不支持该类型文件添加</string>
+
+    <!--no search-->
+    <string name="no_search_result">没有搜索内容</string>
+    <string name="no_result">没有内容</string>
+    <string name="no_data">数据加载失败</string>
+    <!--dialog-->
+    <string name="dialog_delete_title">是否删除所选内容?</string>
+    <string name="dialog_delete_titles">是否删除所选内容?</string>
+    <string name="dialog_history_title">删除后的内容,会在【最近删除】中保留30天</string>
+    <string name="dialog_not_prompt">不再提示</string>
+    <string name="dialog_delete">确认删除</string>
+    <string name="home_item_yesterday">昨天</string>
+    <string name="home_item_today">今天</string>
+
+
+    <!-- new create dialog activity -->
+    <string name="new_create_title">添加到便签</string>
+    <string name="default_title">我的便签</string>
+    <string name="recommend_label_title">按标签查看</string>
+    <string name="my_label_title">我的标签</string>
+    <string name="add_label_title">添加标签</string>
+    <string name="save">保存</string>
+    <string name="save_and_view">保存并查看</string>
+    <string name="not_collect_tip">该页面不支持便签</string>
+    <string name="not_collect_file_tip">不支持文件类型分享</string>
+    <string name="not_collect_video">视频不支持便签</string>
+    <string name="history_thorough_delete">删除</string>
+    <string name="history_thorough_recover">恢复后才能对文档进行编辑</string>
+
+
+    <!-- No translation -->
+
+    <string name="dialog_from_history">清空后将彻底删除，不可恢复</string>
+    <string name="website">网站</string>
+
+    <string name="nothing_to_share">无内容可分享</string>
+    <string name="tele_save_pocket">备忘录保存至便签，可进入便签查看</string>
+    <string name="activity_search_note">搜索图标</string>
+    <string name="activity_search_clear">删除</string>
+    <string name="search_label_title">搜索便签</string>
+
+    <!--share-->
+    <string name="share_title">分享一下</string>
+    <string name="title_1">标题</string>
+    <string name="content_tip">内容</string>
+    <string name="click_2_add_content" />
+    <string name="memo_leak_error">内存不足，图片导入失败…</string>
+    <string name="to_camera">拍照</string>
+    <string name="to_gallery">图库</string>
+    <string name="no_photo">没有图片资源可以添加</string>
+    <string name="memo_leak_error_for_pick_soug">内存不足，音乐导入失败…</string>
+    <string name="no_data_2_share">当前并无可分享内容…</string>
+    <string name="long_img_creating">长图片生成中…</string>
+    <string name="share_retry">分享失败，请重试…</string>
+    <string name="share_memo_leak_error">内存不足，生成长图片失败…</string>
+
+    <string name="mouth">月</string>
+    <string name="year">年</string>
+    <string name="classify_year">年</string>
+    <string name="day">日</string>
+    <string name="forenoon">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="january">一月</string>
+    <string name="february">二月</string>
+    <string name="march">三月</string>
+    <string name="april">四月</string>
+    <string name="may">五月</string>
+    <string name="june">六月</string>
+    <string name="july">七月</string>
+    <string name="august">八月</string>
+    <string name="september">九月</string>
+    <string name="october">十月</string>
+    <string name="november">十一月</string>
+    <string name="december">十二月</string>
+
+
+    <string name="share_text">纯文字分享</string>
+    <string name="share_image">生成图片分享</string>
+    <string name="copy_success">复制成功</string>
+
+    <string name="detailed_list">清单</string>
+    <string name="image">图片</string>
+    <string name="camera">相机</string>
+    <string name="record">录音</string>
+    <string name="background">背景</string>
+
+    <string name="from_gome_note">来自GOME便签</string>
+    <string name="just_exceed_duration">即将超过录音时长</string>
+    <string name="already_time_end">录音结束</string>
+    <string name="record_failed">录音失败</string>
+    <string name="most_input_six_word">最多输入12个字节</string>
+    <string name="mic_or_audio_is_in_use">麦克风或录音设备正在被占用</string>
+    <string name="no_have_net_and_can_not_tar">网络请求失败，无法翻译</string>
+    <string name="image_note">图片便签</string>
+    <string name="audio_note">语音便签</string>
+    <string name="search">搜索</string>
+    <string name="please_check_item">请选择项目</string>
+    <string name="labels_count_not_exceed_thirty">标签数量不能超过30个</string>
+
+    <string name="permission_setting">权限设置</string>
+    <string name="permission_setting_1">您已禁止应用的储存权限，请前往应用设置中开启</string>
+    <string name="go_to">前往</string>
+    <string name="save_failed">保存失败</string>
+    <string name="save_to_local">已保存至</string>
+    <string name="in_in">中</string>
+    <string name="read_audio_stream_failed">读取音频流失败</string>
+    <string name="recognition_failed_and_error_code_is">识别失败,错误码:</string>
+
+
+    <string name="audio_layout_tip">假装我是一个录音控件</string>
+    <string name="nine_plus">99+</string>
+
+    <string name="standard_bg">标准</string>
+    <string name="yellow_bg">黄</string>
+    <string name="green_bg">绿</string>
+    <string name="golden_autumn_bg">金秋</string>
+    <string name="romance_bg">浪漫</string>
+
+    <string name="record_function_is_used">录音功能被占用</string>
+
+
+</resources>

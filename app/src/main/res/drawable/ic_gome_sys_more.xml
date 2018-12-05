@@ -1,0 +1,6 @@
+<vector android:height="24dp" android:viewportHeight="96.0"
+    android:viewportWidth="96.0" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/common_title_bar_icon_color" android:pathData="M47.8,28.1c3.1,0 5.5,-2.5 5.5,-5.5s-2.5,-5.5 -5.5,-5.5s-5.5,2.5 -5.5,5.5S44.8,28.1 47.8,28.1z"/>
+    <path android:fillColor="@color/common_title_bar_icon_color" android:pathData="M47.8,43.1c-3,0 -5.5,2.5 -5.5,5.5s2.5,5.5 5.5,5.5s5.5,-2.5 5.5,-5.5S50.9,43.1 47.8,43.1z"/>
+    <path android:fillColor="@color/common_title_bar_icon_color" android:pathData="M47.8,69.1c-3,0 -5.5,2.5 -5.5,5.5s2.5,5.5 5.5,5.5s5.5,-2.5 5.5,-5.5S50.9,69.1 47.8,69.1z"/>
+</vector>

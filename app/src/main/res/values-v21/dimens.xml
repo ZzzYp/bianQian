@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_margin">4dp</dimen>
+    <dimen name="note_list_margin">3dp</dimen>
+    <!--common-->
+    <dimen name="bottom_bar_height">50dp</dimen>
+    <!--pocket home-->
+    <dimen name="home_title_margin_left">20dp</dimen>
+    <dimen name="home_title_margin_top">10dp</dimen>
+    <dimen name="home_photo_margin_top">15dp</dimen>
+    <dimen name="home_photo_margin_right">10dp</dimen>
+    <dimen name="home_photo_width_height">61dp</dimen>
+    <dimen name="home_delete_button_width">75dp</dimen>
+
+    <!--common text size-->
+    <dimen name="common_textsize_36px">18sp</dimen>
+    <dimen name="common_textsize_34px">17sp</dimen>
+    <dimen name="common_textsize_32px">16sp</dimen>
+    <dimen name="common_textsize_30px">15sp</dimen>
+    <dimen name="common_textsize_28px">14sp</dimen>
+    <dimen name="common_textsize_26px">13sp</dimen>
+    <dimen name="common_textsize_20px">10sp</dimen>
+    <dimen name="common_textsize_24px">12sp</dimen>
+
+</resources>

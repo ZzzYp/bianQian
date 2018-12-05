@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupwindow_style01_shape"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/detail_copy_string"
+            android:textColor="@color/font_black_2"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionBar_bottom_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/share_text"
+            android:textColor="@color/font_black_2"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionBar_bottom_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_share_image"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/share_image"
+            android:textColor="@color/font_black_2"
+            android:textSize="13sp" />/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionBar_bottom_line"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

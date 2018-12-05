@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImagePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:colorPrimary">#F1F2F3</item>
+        <item name="android:colorPrimaryDark">#F1F2F3</item>
+        <item name="android:navigationBarColor">#F1F2F3</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00000000</item>
+        <item name="colorPrimaryDark">#00000000</item>
+        <item name="colorAccent">#00000000</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#00000000</item>
+        <item name="colorPrimaryDark">#00000000</item>
+        <item name="colorAccent">#00000000</item>
+        <item name="android:activityOpenEnterAnimation">@anim/gome_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/gome_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/gome_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/gome_activity_close_exit</item>
+        <item name="android:windowBackground">@color/ip_text_primary_inverted</item>
+        <!--状态栏 白色 且不覆盖 时间 电池等-->
+        <!-- <item name="android:windowLightStatusBar">true</item>-->
+    </style>
+    <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <!--SuperCheckbox的样式-->
+    <style name="SuperCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_item_checked</item>
+    </style>
+
+    <style name="popupwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/show_from_bottom</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+</resources>

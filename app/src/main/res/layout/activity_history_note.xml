@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_history_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/history_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:id="@+id/tv_left_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/ic_gome_icon_back"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_left_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_left_icon"
+                    android:text="@string/history_center_title"
+                    android:textColor="@color/common_text_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_center_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/common_text_title_color"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/tv_right_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/tag_normal_text_color"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/actionBar_bottom_line_new" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/history_bg_color"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="@string/history_delete_all_title"
+            android:textColor="@color/history_delete_color"
+            android:textSize="@dimen/common_textsize_26px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/include_no_result" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gome.note.view.FloatActionMenuView.CustomFloatActionMenuView
+        android:id="@+id/history_bar_bottom_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="gone"
+        gm:maxItems="2"
+        gm:menu="@menu/hietory_bottom_menu" />
+
+
+</FrameLayout>

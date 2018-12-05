@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gome.note.view.FloatActionMenuView.OverflowMenuButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gome_float_menu_item_width"
+    android:layout_height="@dimen/gome_float_menu_item_height">
+
+    <LinearLayout
+        android:id="@+id/float_item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ic_gome_float_menu_item_bg"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@id/action_icon"
+            android:layout_width="@dimen/float_action_button_icon_width"
+            android:layout_height="@dimen/float_action_button_icon_height"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@id/action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="9dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/gome_float_menu_item_text_color"/>
+
+    </LinearLayout>
+</com.gome.note.view.FloatActionMenuView.OverflowMenuButton>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_res_label">"系統資源包"</string>
+    <string name="volumn_stream_name_bluetooth">Bluetooth</string>
+
+    <!-- Menu item displayed at the end of a menu to allow users to see another page worth of menu items. This is shown on any app's menu as long as the app has too many items in the menu.-->
+    <string name="more_item_label">More</string>
+    <!-- Prepended to the shortcut for a menu item to indicate that the user should hold the MENU button together with the shortcut to invoke the item. For example, if the shortcut to open a new tab in browser is MENU and B together, then this would be prepended to the letter "B" -->
+    <string name="prepend_shortcut_label">Menu+</string>
+    <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+space for the shortcut. -->
+    <string name="menu_space_shortcut_label">space</string>
+    <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+enter for the shortcut. -->
+    <string name="menu_enter_shortcut_label">enter</string>
+    <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+delete for the shortcut. -->
+    <string name="menu_delete_shortcut_label">delete</string>
+
+    <string name="capital_on">"ON"</string>
+    <string name="capital_off">"OFF"</string>
+    <!-- modified by huhongyan GMOS-5417 on 20170907-->
+    <string name="already_in_security">You have accessed in Security mode</string>
+    <!-- modified by huhongyan GMOS-5417 on 20170907-->
+    <string name="iden_success">identify success security mode entered</string>
+    <string name="iden_open_camera_failed">Open the FaceUnlock failed,please check the camera or permissions are occupied</string>
+    <string name="iden_keyguardOn_open_camera_failed">Open the FaceUnlock failed,please exit the camera application in the background</string>
+    <string name="iden_failed">identify failed</string>
+    <string name="iden_timeout">identify timeout</string>
+    <string name="iris_warning_title">Tips</string>
+    <string name="no_feature">Please enroll your Face ID as your personal biological code before start security code</string>
+    <string name="iris_keyguard_register_text">Before opening the security mode,please enroll your Face ID.</string>
+    <string name="iris_training">You have been familiar for iris verification, would you want to close the iris mask?</string>
+    <string name="iris_confirm">OK</string>
+    <string name="iris_keyguard_register_close">Close</string>
+    <string name="iden_not_screenshot">In order to protect your privacy information, can not take a screenshot when the iris verification process is on</string>
+    <!-- shut down warning string -->
+    <string name="battery_low_shut_down_warning">"The battery is too low, the device will be power off after <xliff:g id="NUMBER">%d</xliff:g>S"</string>
+    <string name="battery_low_shut_down_warning_confirm">"Got it"</string>
+    <string name="battery_low_shut_down_warning_title">"Reminder!"</string>
+    <string name="shutdown_countdown_message">The battery is too low, the device will be power off after 10S</string>
+
+    <string name="searchview_description_clear">Clear query</string>
+    <string name="searchview_description_voice">Voice search</string>
+    <string name="searchview_description_search">Search</string>
+    <!-- SearchView accessibility description for search text field [CHAR LIMIT=NONE] -->
+    <string name="searchview_description_query">Search query</string>
+    <string name="searchview_description_submit">Submit query</string>
+
+    <string name="search_default_queryhint">Search...</string>
+
+    <!--porting theme begin-->
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Failed to install theme</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g> failed to install</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Theme reset</string>
+    <string name="theme_reset_notification_message">System theme restored due to multiple app crashes.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">access theme service</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Allows an app to access the theme service. Should never be needed for normal apps.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">read your theme info</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Allows the app to read your themes and determine which theme you have applied.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">modify your themes</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Allows the app to insert new themes and modify which theme you have applied.</string>
+    <!--porting theme end-->
+    <string name="security_mode_warning_lock">The FaceUnlock is forbidden because of Wechat is locking.</string>
+</resources>

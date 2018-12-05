@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gm="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_search_radius_shape"
+        android:minHeight="30dp">
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/ic_gome_icon_settings_search_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/image_search"
+            android:textSize="13sp"
+            android:textColor="@color/font_black_6"
+            android:text="@string/search" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+===============================================================
+                        PLEASE READ
+===============================================================
+This file contains the themes that are the Device Defaults.
+If you want to edit styles to skin your device, do it here.
+We recommend that you do not edit styles.xml and instead edit
+this file.
+
+Editing this file instead of styles.xml will greatly simplify
+merges for future platform versions and CTS compliance will be
+easier.
+===============================================================
+                        PLEASE READ
+===============================================================
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" >
+
+    <style name="Widget.GOME.Light" parent="@android:style/Widget.Material.Light" >
+
+    </style>
+    <!-- Button Styles -->
+    <style name="Widget.GOME.Light.Button" parent="@android:style/Widget.Material.Button" >
+        <item name="android:background">@drawable/btn_gome_shape_techain</item>
+        <item name="android:textColor">@drawable/btn_gome_button_text_color</item>
+        <item name="android:textSize">@dimen/btn_gome_text_size</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:minWidth">75dip</item>
+    </style>
+
+    <!-- Caution Button Styles -->
+    <style name="Widget.GOME.Light.Caution.Button" parent="@style/Widget.GOME.Light.Button" >
+        <item name="android:background">@drawable/btn_gome_caution_shape_techain</item>
+        <item name="android:textColor">@drawable/btn_gome_caution_button_text_color</item>
+    </style>
+
+    <!-- Blue Button Styles -->
+    <style name="Widget.GOME.Light.Blue.Button" parent="@style/Widget.GOME.Light.Button" >
+        <item name="android:background">@drawable/btn_gome_blue_shape_techain</item>
+        <item name="android:textColor">@drawable/btn_gome_blue_button_text_color</item>
+    </style>
+
+    <!-- Switch Styles -->
+    <style name="Widget.GOME.Light.CompoundButton.Switch" parent="@android:style/Widget.CompoundButton">
+        <item name="thumbDrawable">@drawable/gome_switch_thumb_selector</item>
+	    <item name="thumbMargin">@dimen/gome_thumb_margin</item>
+	    <item name="thumbWidth">@dimen/gome_thumb_width</item>
+	    <item name="thumbHeight">@dimen/gome_thumb_height</item>
+        <!--<item name="gomethumbColor">@color/switch_gome_thumb_color</item>-->
+	    <item name="trackColor">@color/gome_switch_track_color</item>
+        <item name="trackMeasureRatio">@dimen/gome_track_measure_ratio</item>
+		<item name="animationDuration">250</item>
+    </style>
+
+    <style name="Widget.GOME.Dark.CompoundButton.Switch" parent="@android:style/Widget.CompoundButton">
+        <item name="thumbDrawable">@drawable/gome_switch_thumb_dark_selector</item>
+        <item name="thumbMargin">@dimen/gome_thumb_margin</item>
+        <item name="thumbWidth">@dimen/gome_thumb_width</item>
+        <item name="thumbHeight">@dimen/gome_thumb_height</item>
+        <!--<item name="gomethumbColor">@color/switch_gome_thumb_color</item>-->
+        <item name="trackColor">@color/gome_switch_track_dark_color</item>
+        <item name="trackMeasureRatio">@dimen/gome_track_measure_ratio</item>
+        <item name="animationDuration">250</item>
+    </style>
+	
+    <!-- Seekbar Styles -->
+    <style name="Widget.GOME.Light.SeekBar" parent="@android:style/Widget.Material.Light.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:splitTrack">false</item>
+        <item name="android:background">@drawable/control_background_32dp_gome</item>
+        <item name="android:progressDrawable">@drawable/seekbar_track_gome_techain</item>
+        <item name="android:indeterminateDrawable">@drawable/seekbar_track_gome_techain</item>
+        <item name="android:thumb">@drawable/seekbar_thumb_gome_anim_techain</item>
+    </style>
+
+    <!-- AlertDialog Styles -->
+    <style name="AlertDialog">
+
+    </style>
+
+    <style name="AlertDialog.GOME">
+
+    </style>
+
+    <style name="AlertDialog.GOME.Light">
+        <!--<item name="fullDark">@empty</item>-->
+        <!--<item name="topDark">@empty</item>-->
+        <!--<item name="centerDark">@empty</item>-->
+        <!--<item name="bottomDark">@empty</item>-->
+        <!--<item name="fullBright">@empty</item>-->
+        <!--<item name="topBright">@empty</item>-->
+        <!--<item name="centerBright">@empty</item>-->
+        <!--<item name="bottomBright">@empty</item>-->
+        <!--<item name="bottomMedium">@empty</item>-->
+        <!--<item name="centerMedium">@empty</item>-->
+        <item name="layout">@layout/gome_alert_dialog</item>
+        <item name="listLayout">@layout/gome_select_dialog</item>
+        <item name="progressLayout">@null</item>
+        <item name="horizontalProgressLayout">@null</item>
+        <item name="listItemLayout">@layout/gome_select_dialog_item</item>
+        <item name="multiChoiceItemLayout">@layout/gome_select_dialog_multichoice</item>
+        <item name="singleChoiceItemLayout">@layout/gome_select_dialog_singlechoice</item>
+        <!-- <item name="android:useGomeTheme">true</item> ADD BY LIANG.SUN FOR ALERTDIALOG 20170721 -->
+    </style>
+
+
+    <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+    <style name="Widget.GOME.PopupMenu.Overflow" parent="@android:style/Widget.Material.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:popupBackground">@drawable/gome_popup_background</item>
+        <item name="android:popupElevation">@dimen/gome_floating_window_z</item>
+    <!--<item name="android:isRoundCornerStyle">true</item>-->
+</style>
+
+<style name="Widget.GOME.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown">
+    <item name="android:divider">@drawable/gome_popup_menu_divider</item>
+    <item name="android:dividerHeight">1px</item>
+</style>
+<!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+    <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+    <style name="Widget.GOME.FloatMenu.Overflow" parent="@android:style/Widget.Material.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-10dip</item>
+        <item name="android:popupBackground">@drawable/gome_popup_background</item>
+        <item name="android:popupElevation">@dimen/gome_floating_window_z</item>
+        <item name="android:popupEnterTransition">@transition/gome_float_menu_enter</item>
+        <item name="android:popupExitTransition">@transition/gome_float_menu_exit</item>
+    </style>
+    <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+
+    <!-- ADD BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
+     <style name="Widget">
+
+    </style>
+
+    <style name="Widget.NumberPicker">
+
+    </style>
+
+    <!--<style name="Widget.GOME.NumberPicker" parent="@android:style/Widget.Material.NumberPicker">-->
+        <!--<item name="android:internalLayout">@layout/number_picker_gome</item>-->
+        <!--<item name="android:selectionDividerHeight">0dp</item>-->
+        <!--<item name="android:selectionDividersDistance">48dp</item>-->
+        <!--<item name="android:internalMaxHeight">109dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="Widget.GOME.DatePicker" parent="@android:style/Widget.Material.DatePicker">-->
+        <!--<item name="android:legacyLayout">@layout/gome_date_picker_legacy_holo</item>-->
+        <!--<item name="android:calendarViewShown">false</item>-->
+    <!--</style>-->
+    <!-- ADD END BY LIANG.SUN FOR DATEPICKER 20170620 -->
+
+    <!-- RadioButton Styles -->
+    <style name="Widget.GOME.Light.CompoundButton.RadioButton" parent="@android:style/Widget.Material.Light.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/gome_radiobutton_default_selector_techain</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- CheckBox Styles -->
+    <style name="Widget.GOME.Light.CompoundButton.CheckBox" parent="@android:style/Widget.Material.Light.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/checkbox_gome_selector_techain</item>
+    </style>
+
+    <!-- Double CheckBox Styles -->
+    <style name="Widget.GOME.Light.CompoundButton.Double.CheckBox" parent="@android:style/Widget.Material.Light.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/checkbox_gome_selector_techain_double</item>
+    </style>
+
+    <!-- ADD BEGIN BY ZHENJIE.CHANG FOR PROGRESS BAR STYLE -->
+    <!--<style name="Widget.GOME.ProgressBar" parent="@android:style/Widget.Material.ProgressBar">-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_medium_gome</item>-->
+        <!--<item name="android:maxWidth">24dp</item>-->
+        <!--<item name="android:maxHeight">24dp</item>-->
+        <!--<item name="android:minWidth">24dp</item>-->
+        <!--<item name="android:minHeight">24dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="Widget.GOME.ProgressBar.Inverse"/>-->
+
+    <!--<style name="Widget.GOME.ProgressBar.Small" parent="@android:style/Widget.Material.ProgressBar.Small">-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_small_gome</item>-->
+    <!--</style>-->
+
+    <!--<style name="Widget.GOME.ProgressBar.Small.Inverse"/>-->
+    <!--<style name="Widget.GOME.ProgressBar.Small.Title"/>-->
+
+    <!--<style name="Widget.GOME.ProgressBar.Large" parent="@android:style/Widget.Material.ProgressBar.Large">-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_large_gome</item>-->
+    <!--</style>-->
+
+    <!--<style name="Widget.GOME.ProgressBar.Large.Inverse"/>-->
+
+    <!--<style name="Widget.GOME.ProgressBar.Horizontal" parent="@android:style/Widget.Material.ProgressBar.Horizontal">-->
+        <!--<item name="android:progressDrawable">@drawable/progress_horizontal_gome</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_gome</item>-->
+        <!--<item name="android:minHeight">16dip</item>-->
+        <!--<item name="android:maxHeight">16dip</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash; ADD END BY ZHENJIE.CHANG FOR PROGRESS BAR STYLE &ndash;&gt;-->
+    <!--&lt;!&ndash; ADD BEGIN BY LIANG.SUN FOR TIMEPICKER 20170713 &ndash;&gt;-->
+    <!--&lt;!&ndash; TimePicker Styles &ndash;&gt;-->
+    <!--<style name="Widget.GOME.TimePicker" parent="@android:style/Widget.Material.TimePicker">-->
+        <!--<item name="android:legacyLayout">@layout/gome_time_picker_legacy_material</item>-->
+    <!--</style>-->
+    <!-- ADD END BY LIANG.SUN FOR TIMEPICKER 20170713 -->
+
+    <!--<style name="Preference">-->
+    <!--</style>-->
+
+    <!--<style name="Preference.GOME">-->
+        <!--<item name="android:layout">@layout/preference_gome</item>-->
+    <!--</style>-->
+
+    <!--<style name="Preference.GOME.SwitchPreference">-->
+        <!--<item name="android:widgetLayout">@layout/preference_widget_gome_switch</item>-->
+        <!--&lt;!&ndash;<item name="android:switchTextOn">@string/capital_on</item>-->
+        <!--<item name="android:switchTextOff">@string/capital_off</item>&ndash;&gt;-->
+    <!--</style>-->
+
+    <!--<style name="Widget.GOME.SearchView" parent="@android:style/Widget.Material.SearchView">-->
+        <!--<item name="android:layout">@layout/gome_search_view</item>-->
+        <!--<item name="android:queryBackground">@drawable/gome_search_bar_bg</item>-->
+        <!--<item name="android:queryHint">@string/search_default_queryhint</item>-->
+        <!--<item name="android:closeIcon">@drawable/gome_ic_searchbar_delete</item>-->
+        <!--<item name="android:searchIcon">@drawable/gome_ic_searchbar_search</item>-->
+        <!--<item name="android:searchHintIcon">@drawable/gome_ic_searchbar_search</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="Widget.GOME.SearchView.ActionBar">-->
+        <!--<item name="android:queryBackground">@empty</item>-->
+        <!--<item name="android:submitBackground">@empty</item>-->
+    <!--</style>-->
+
+    <style name="Widget.GOME.ContextPopupMenu" parent="@android:style/Widget.Material.ListPopupWindow">
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:popupBackground">@drawable/gome_popup_background</item>
+        <!-- <item name="android:isRoundCornerStyle">true</item>-->
+     </style>
+     <style name="GomeActivityAnimationStyle">
+         <item name="android:activityOpenEnterAnimation">@anim/gome_activity_open_enter</item>
+         <item name="android:activityOpenExitAnimation">@anim/gome_activity_open_exit</item>
+         <item name="android:activityCloseEnterAnimation">@anim/gome_activity_close_enter</item>
+         <item name="android:activityCloseExitAnimation">@anim/gome_activity_close_exit</item>
+     </style>
+
+     <style name="Widget.GOME.Toolbar" parent="@android:style/Widget.Material.Toolbar">
+         <item name="android:titleTextAppearance">@style/TextAppearance.GOME.Widget.Toolbar.Title</item>
+         <item name="android:subtitleTextAppearance">@style/TextAppearance.GOME.Widget.Toolbar.Subtitle</item>
+         <!--<item name="android:paddingStart">0dp</item>-->
+        <!--<item name="android:paddingEnd">0dp</item>-->
+        <!--<item name="android:contentInsetStartWithNavigation">47dp</item>-->
+        <!--<item name="android:navigationButtonMarginStart">18dp</item>-->
+        <!--<item name="android:menuViewMarginEnd">10dp</item>-->
+        <!--<item name="android:navigationButtonStyle">@style/Widget.GOME.Toolbar.Button.Navigation</item>-->
+    </style>
+    <style name="Widget.GOME.Toolbar.Button.Navigation" parent="@android:style/Widget.Material">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:minWidth">24dp</item>
+    </style>
+
+    <style name="Widget.GOME.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_gome_sys_ic_more_vert</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:minWidth">@dimen/action_button_min_width_overflow_gome</item>
+        <item name="android:minHeight">@dimen/action_button_min_height_gome</item>
+    </style>
+
+    <style name="Widget.GOME.ActionButton" parent="@android:style/Widget.Material.ActionButton">
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:minWidth">@dimen/action_button_min_width_gome</item>
+        <item name="android:minHeight">@dimen/action_button_min_height_gome</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="TextAppearance.GOME.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Large">
+        <item name="android:textSize">@dimen/text_size_menu_gome</item>
+    </style>
+
+    <style name="TextAppearance.GOME.Widget.Toolbar.Title" parent="@android:style/TextAppearance.Material.Widget.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_title_gome_toolbar</item>
+        <item name="android:textColor">@color/gome_toolbar_title_text_color</item>
+    </style>
+    
+    <style name="TextAppearance.GOME.Widget.Toolbar.Subtitle" parent="@android:style/TextAppearance.Material.Widget.Toolbar.Subtitle">
+        <item name="android:textSize">@dimen/text_size_subtitle_gome_toolbar</item>
+    </style>
+
+    <style name="TextAppearance.GOME.Widget.ActionBar.Title" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/text_size_title_gome_toolbar</item>
+        <item name="android:textColor">@color/gome_toolbar_title_text_color</item>
+    </style>
+
+    <style name="TextAppearance.GOME.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/text_size_subtitle_gome_toolbar</item>
+    </style>
+
+    <style name="Widget.GOME.ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@color/gome_toolbar_background_color</item>
+        <item name="android:backgroundStacked">@color/gome_toolbar_background_color</item>
+        <item name="android:backgroundSplit">@color/gome_toolbar_background_color</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.GOME.Widget.ActionBar.Title</item>
+        <item name="android:subtitleTextStyle">@style/TextAppearance.GOME.Widget.ActionBar.Subtitle</item>
+        <item name="android:elevation">@dimen/action_bar_elevation_gome</item>
+    </style>
+</resources>

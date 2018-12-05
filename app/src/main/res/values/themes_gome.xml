@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+===============================================================
+                        PLEASE READ
+===============================================================
+This file contains the themes that are the Device Defaults.
+If you want to edit themes to skin your device, do it here.
+We recommend that you do not edit themes.xml and instead edit
+this file.
+
+Editing this file instead of themes.xml will greatly simplify
+merges for future platform versions and CTS compliance will be
+easier.
+===============================================================
+                        PLEASE READ
+===============================================================
+ -->
+<resources >
+
+    <style name="Theme.GOME.Light" parent="@android:style/Theme.Material.Light">
+
+        <!-- Window styles -->
+        <!--<item name="android:windowActionBarFullscreenDecorLayout">@layout/screen_toolbar_default</item>-->
+        <!--<item name="android:windowClipToOutline">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowOverscan">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">false</item>-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <item name="android:homeAsUpIndicator">@drawable/gome_sys_ic_back</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.GOME.Light.Button</item>
+        <!-- AlertDialog attributes -->
+        <item name="android:alertDialogTheme">@style/Theme.GOME.Light.Dialog.Alert</item>
+        <!-- Dialog attributes -->
+        <item name="android:dialogTheme">@android:style/ThemeOverlay.Material.Dialog</item>
+        <!--modify begin by sunliang for add GomeAlertDialog20170601-->
+        <!--<item name="gomeAlertDialogStyle">@style/AlertDialog.GOME.Light</item>-->
+        <item name="android:listDividerAlertDialog">@null</item>
+        <item name="android:textColorAlertDialogListItem">@color/gome_primary_text_material_light</item>
+
+        <!-- Switch styles -->
+        <item name="gomeSwitchStyle">@style/Widget.GOME.Light.CompoundButton.Switch</item>
+        <!-- SeekBar styles -->
+        <item name="android:seekBarStyle">@style/Widget.GOME.Light.SeekBar</item>
+
+        <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+        <!-- Action Bar styles -->
+        <item name="android:actionOverflowMenuStyle">@style/Widget.GOME.PopupMenu.Overflow</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.GOME.ListView.DropDown</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.GOME.ActionButton.Overflow</item>
+        <item name="android:actionButtonStyle">@style/Widget.GOME.ActionButton</item>
+        <item name="android:toolbarStyle">@style/Widget.GOME.Toolbar</item>
+        <!--<item name="android:actionBarTheme">@style/ThemeOverlay.GOME.ActionBar</item>-->
+        <item name="android:actionBarStyle">@style/Widget.GOME.ActionBar</item>
+        <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+        <!-- ADD BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
+        <!-- DatePicker style -->
+        <!--<item name="android:datePickerStyle">@style/Widget.GOME.DatePicker</item>-->
+        <!-- NumberPicker style-->
+        <!--<item name="android:numberPickerStyle">@style/Widget.GOME.NumberPicker</item>-->
+        <!-- ADD END BY LIANG.SUN FOR DATEPICKER 20170620 -->
+        <!-- RadioButton style-->
+        <item name="android:radioButtonStyle">@style/Widget.GOME.Light.CompoundButton.RadioButton</item>
+        <!-- CheckBox style-->
+        <item name="android:checkboxStyle">@style/Widget.GOME.Light.CompoundButton.CheckBox</item>
+        <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+        <item name="gomeFloatMenuOverflowStyle">@style/Widget.GOME.FloatMenu.Overflow</item>
+        <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+        <!-- ADD BEGIN BY ZHENJIE.CHANG FOR PROGRESS BAR STYLE -->
+        <item name="android:colorAccent">@color/gome_color_control_actived</item>
+
+        <item name="android:colorControlNormal">@color/gome_color_control_normal</item>
+        <item name="android:colorControlActivated">@color/gome_color_control_actived</item>
+
+        <!--<item name="android:progressBarStyle">@style/Widget.GOME.ProgressBar</item>-->
+        <!--<item name="android:progressBarStyleSmall">@style/Widget.GOME.ProgressBar.Small</item>-->
+        <!--<item name="android:progressBarStyleSmallTitle">@style/Widget.GOME.ProgressBar.Small.Title</item>-->
+        <!--<item name="android:progressBarStyleLarge">@style/Widget.GOME.ProgressBar.Large</item>-->
+        <!--<item name="android:progressBarStyleInverse">@style/Widget.GOME.ProgressBar.Inverse</item>-->
+        <!--<item name="android:progressBarStyleSmallInverse">@style/Widget.GOME.ProgressBar.Small.Inverse</item>-->
+        <!--<item name="android:progressBarStyleLargeInverse">@style/Widget.GOME.ProgressBar.Large.Inverse</item>-->
+        <!--<item name="android:progressBarStyleHorizontal">@style/Widget.GOME.ProgressBar.Horizontal</item>-->
+
+        <!-- ADD END BY ZHENJIE.CHANG FOR PROGRESS BAR STYLE -->
+        <!-- TimePicker style -->
+        <!--<item name="android:timePickerStyle">@style/Widget.GOME.TimePicker</item>&lt;!&ndash; MODIFY BY LIANG.SUN FOR TIMEPICKER 20170713 &ndash;&gt;-->
+        <item name="android:listChoiceIndicatorSingle">@drawable/gome_btn_radio_material_anim</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/gome_btn_check_material_anim</item>
+
+        <!-- Preference styles -->
+        <!--<item name="android:switchPreferenceStyle">@style/Preference.GOME.SwitchPreference</item>-->
+        <!--&lt;!&ndash;<item name="android:useGomeTheme">true</item> ADD BY LIANG.SUN FOR ALERTDIALOG 20170721 &ndash;&gt;-->
+        <!--<item name="android:searchViewStyle">@style/Widget.GOME.SearchView</item>-->
+        <item name="android:contextPopupMenuStyle">@style/Widget.GOME.ContextPopupMenu</item>
+        <!-- add begin by JIAN.WANG for preference background -->
+        <!--<item name="android:selectableItemBackground">@drawable/layout_background_selector</item>-->
+        <!--<item name="android:selectableItemBackgroundBorderless">@drawable/layout_background_selector</item>-->
+        <item name="android:listChoiceBackgroundIndicator">@drawable/layout_background_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/layout_background_selector</item>
+        <!-- add end by JIAN.WANG for preference background -->
+
+        <!-- Scrollbar attributes -->
+        <item name="android:scrollbarFadeDuration">250</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">400</item>
+        <item name="android:scrollbarSize">10dp</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/gome_scrollbar_handle_material</item>
+        <item name="android:scrollbarThumbVertical">@drawable/gome_scrollbar_handle_material</item>
+        <item name="android:scrollbarTrackHorizontal">@null</item>
+        <item name="android:scrollbarTrackVertical">@null</item>
+
+        <!-- Text Styles -->
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.GOME.Widget.PopupMenu.Large</item>
+        <item name="android:colorEdgeEffect">#1A000000</item>
+        <!--<item name="android:windowAnimationStyle">@style/GomeActivityAnimationStyle</item>-->
+    </style>
+
+    <style name="Theme.GOME.Light.BaseDialog">
+        <item name="android:colorBackground">?android:attr/colorBackgroundFloating</item>
+
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+        <item name="android:windowBackground">@drawable/gome_bg_dialog</item>
+        <item name="android:windowElevation">0dip</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:navigationBarColor">#FFF0F0F0</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+        <item name="android:listPreferredItemPaddingLeft">24dip</item>
+        <item name="android:listPreferredItemPaddingRight">24dip</item>
+        <item name="android:listPreferredItemPaddingStart">24dip</item>
+        <item name="android:listPreferredItemPaddingEnd">24dip</item>
+
+        <item name="android:listDivider">@null</item>
+
+    </style>
+
+    <style name="Theme.GOME.Light.Dialog" parent="Theme.GOME.Light.BaseDialog"/>
+
+
+    <style name="Theme.GOME.Light.Dialog.MinWidth">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+
+    <style name="Theme.GOME.Light.Dialog.BaseAlert" parent="@android:style/ThemeOverlay.Material.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowBackground">@drawable/gome_bg_dialog</item>
+        <item name="android:buttonStyle">@style/Widget.GOME.Light.Button</item>
+        <item name="android:textColorAlertDialogListItem">@color/gome_primary_text_material_light</item>
+    </style>
+
+    <style name="Theme.GOME.Light.ProgressDialog" parent="Theme.GOME.Light.Dialog.BaseAlert">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowElevation">6dp</item>
+        <!--<item name="android:progressBarStyle">@style/Widget.GOME.ProgressBar</item>-->
+        <!--<item name="android:progressBarStyleSmall">@style/Widget.GOME.ProgressBar.Small</item>-->
+        <!--<item name="android:progressBarStyleSmallTitle">@style/Widget.GOME.ProgressBar.Small.Title</item>-->
+        <!--<item name="android:progressBarStyleLarge">@style/Widget.GOME.ProgressBar.Large</item>-->
+        <!--<item name="android:progressBarStyleInverse">@style/Widget.GOME.ProgressBar.Inverse</item>-->
+        <!--<item name="android:progressBarStyleSmallInverse">@style/Widget.GOME.ProgressBar.Small.Inverse</item>-->
+        <!--<item name="android:progressBarStyleLargeInverse">@style/Widget.GOME.ProgressBar.Large.Inverse</item>-->
+        <!--<item name="android:progressBarStyleHorizontal">@style/Widget.GOME.ProgressBar.Horizontal</item>-->
+    </style>
+
+    <style name="Theme.GOME.Light.Dialog.Alert" parent="Theme.GOME.Light.Dialog.BaseAlert"/>
+
+    <style name="Theme.GOME.Dark" parent="@android:style/ThemeOverlay.Material.Dark">
+
+        <!-- Window styles -->
+        <item name="android:windowClipToOutline">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowOverscan">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.GOME.Light.Button</item>
+        <!-- AlertDialog attributes -->
+        <!--<item name="android:alertDialogTheme">@style/Theme.GOME.Light.Dialog.Alert</item>-->
+        <!--modify begin by sunliang for add GomeAlertDialog20170601-->
+        <!--<item name="gomeAlertDialogStyle">@style/AlertDialog.GOME.Light</item>-->
+
+        <!-- Switch styles -->
+        <item name="gomeSwitchStyle">@style/Widget.GOME.Dark.CompoundButton.Switch</item>
+        <!-- SeekBar styles -->
+        <item name="android:seekBarStyle">@style/Widget.GOME.Light.SeekBar</item>
+
+        <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+        <!-- Action Bar styles -->
+        <item name="android:actionOverflowMenuStyle">@style/Widget.GOME.PopupMenu.Overflow</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.GOME.ListView.DropDown</item>
+        <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+        <!-- ADD BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
+        <!-- DatePicker style -->
+        <!--<item name="android:datePickerStyle">@style/Widget.GOME.DatePicker</item>-->
+        <!--&lt;!&ndash; NumberPicker style&ndash;&gt;-->
+        <!--<item name="android:numberPickerStyle">@style/Widget.GOME.NumberPicker</item>-->
+        <!-- ADD END BY LIANG.SUN FOR DATEPICKER 20170620 -->
+        <!-- RadioButton style-->
+        <item name="android:radioButtonStyle">@style/Widget.GOME.Light.CompoundButton.RadioButton</item>
+        <!-- CheckBox style-->
+        <item name="android:checkboxStyle">@style/Widget.GOME.Light.CompoundButton.CheckBox</item>
+        <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+        <item name="gomeFloatMenuOverflowStyle">@style/Widget.GOME.FloatMenu.Overflow</item>
+        <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+        <!-- Activity animation Styles -->
+    </style>
+
+    <!--<style name="ThemeOverlay.GOME.ActionBar" parent="@android:style/ThemeOverlay.Material.ActionBar">-->
+        <!--<item name="android:searchViewStyle">@style/Widget.GOME.SearchView.ActionBar</item>-->
+    <!--</style>-->
+
+
+</resources>

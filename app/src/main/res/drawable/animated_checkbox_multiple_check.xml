@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_checkbox_multiple_unchecked">
+    <target
+        android:name="path_round"
+        android:animation="@anim/anim_checkbox_multiple_check_path_round" />
+
+    <target
+        android:name="group_round"
+        android:animation="@anim/anim_checkbox_multiple_check_group_round" />
+
+    <target
+        android:name="path_hook1"
+        android:animation="@anim/anim_checkbox_multiple_check_path_hook1" />
+    <target
+        android:name="path_hook2"
+        android:animation="@anim/anim_checkbox_multiple_check_path_hook2" />
+    <target
+        android:name="path_decor1"
+        android:animation="@anim/anim_checkbox_multiple_check_path_decor" />
+    <target
+        android:name="path_decor2"
+        android:animation="@anim/anim_checkbox_multiple_check_path_decor" />
+    <target
+        android:name="path_decor3"
+        android:animation="@anim/anim_checkbox_multiple_check_path_decor" />
+    <target
+        android:name="path_decor4"
+        android:animation="@anim/anim_checkbox_multiple_check_path_decor" />
+</animated-vector>

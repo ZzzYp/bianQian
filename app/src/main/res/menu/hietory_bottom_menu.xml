@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tv_recover"
+        android:icon="@drawable/gome_icon_recover"
+        android:title="@string/history_recover"/>
+
+    <item android:id="@+id/tv_delete"
+        android:icon="@drawable/gome_icon_delete_bottom"
+        android:title="@string/history_delete"/>
+</menu>

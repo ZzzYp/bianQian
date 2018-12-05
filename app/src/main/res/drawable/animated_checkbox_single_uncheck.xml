@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_checkbox_single_checked">
+
+    <target
+        android:name="path_round"
+        android:animation="@anim/anim_checkbox_single_uncheck_path_round" />
+
+    <target
+        android:name="group_round"
+        android:animation="@anim/anim_checkbox_single_uncheck_group_round" />
+
+    <target
+        android:name="path_hook"
+        android:animation="@anim/anim_checkbox_single_uncheck_path_hook" />
+</animated-vector>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer" />
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="type" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PathView">
+        <attr name="pathColor" format="color|reference"/>
+        <attr name="pathWidth" format="dimension|reference"/>
+        <attr name="svg" format="reference"/>
+        <attr name="fill" format="boolean"/>
+        <attr name="fillColor" format="color|reference"/>
+        <attr name="naturalColors" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+
+    <!--<declare-styleable name="FloatActionMenuView">-->
+        <!--&lt;!&ndash; The menu resource to inflate and populate items from. &ndash;&gt;-->
+        <!--<attr name="menu" format="reference"/>-->
+        <!--<attr name="maxItems" format="integer"/>-->
+        <!--<attr name="listItemShowIcon" format="boolean"/>-->
+        <!--<attr name="overflowButtonText" format="string"/>-->
+        <!--<attr name="overflowButtonIcon" format="reference"/>-->
+    <!--</declare-styleable>-->
+
+    <!--&lt;!&ndash; ADD BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 &ndash;&gt;-->
+    <!--<attr name="gomeFloatMenuOverflowStyle" format="reference" />-->
+    <!--&lt;!&ndash; ADD END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 &ndash;&gt;-->
+
+</resources>

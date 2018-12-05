@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_tv_bottom_create"
+        android:icon="@drawable/ic_gome_icon_add"
+        android:title="@string/bottom_create" />
+
+    <item
+        android:id="@+id/home_tv_bottom_camera"
+        android:icon="@drawable/ic_gome_icon_camera"
+        android:title="@string/bottom_camera" />
+
+    <item
+        android:id="@+id/home_tv_bottom_record"
+        android:icon="@drawable/ic_gome_sys_ic_voicerecord"
+        android:title="@string/bottom_record" />
+
+    <item
+        android:id="@+id/home_tv_bottom_label_manager"
+        android:icon="@drawable/ic_gome_icon_tag_manager"
+        android:title="@string/my_label_title" />
+
+    <item
+        android:id="@+id/home_tv_bottom_recently_deleted"
+        android:icon="@drawable/ic_gome_icon_recently_deleted"
+        android:title="@string/bottom_more_history" />
+</menu>

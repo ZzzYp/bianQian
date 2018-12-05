@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- disable -->
+    <item android:state_checked="true" android:state_enabled="false">
+        <layer-list>
+            <item
+                android:gravity="center">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_shadow"/>
+                </shape>
+            </item>
+            <item
+                android:gravity="center">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_checked_disable"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- disable -->
+    <item android:state_enabled="false">
+        <layer-list>
+            <item
+                android:gravity="center">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_shadow"/>
+                </shape>
+            </item>
+            <item
+                android:gravity="center">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_dark_disable"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- checked pressed -->
+    <item android:state_checked="true" android:state_pressed="true">
+        <layer-list>
+            <item
+                android:bottom="@dimen/gome_switch_thumb_shadow_inset_bottom"
+                android:gravity="center"
+                android:left="@dimen/gome_switch_thumb_shadow_inset"
+                android:right="@dimen/gome_switch_thumb_shadow_inset"
+                android:top="@dimen/gome_switch_thumb_shadow_inset_top">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_shadow"/>
+                </shape>
+            </item>
+            <item
+                android:bottom="@dimen/gome_switch_thumb_solid_inset"
+                android:gravity="center"
+                android:left="@dimen/gome_switch_thumb_solid_inset"
+                android:right="@dimen/gome_switch_thumb_solid_inset"
+                android:top="@dimen/gome_switch_thumb_solid_inset">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_normal"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- unchecked pressed -->
+    <item android:state_checked="false" android:state_pressed="true">
+        <layer-list>
+            <item
+                android:bottom="@dimen/gome_switch_thumb_shadow_inset_bottom"
+                android:gravity="center"
+                android:left="@dimen/gome_switch_thumb_shadow_inset"
+                android:right="@dimen/gome_switch_thumb_shadow_inset"
+                android:top="@dimen/gome_switch_thumb_shadow_inset_top">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_shadow"/>
+                </shape>
+            </item>
+            <item
+                android:bottom="@dimen/gome_switch_thumb_solid_inset"
+                android:gravity="center"
+                android:left="@dimen/gome_switch_thumb_solid_inset"
+                android:right="@dimen/gome_switch_thumb_solid_inset"
+                android:top="@dimen/gome_switch_thumb_solid_inset">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_dark_normal"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- checked unpressed -->
+    <item android:state_checked="true" android:state_pressed="false">
+        <layer-list>
+            <item
+                android:gravity="center"
+                android:right="@dimen/gome_switch_thumb_shadow_inset"
+                android:bottom="@dimen/gome_switch_thumb_shadow_inset_bottom"
+                android:left="@dimen/gome_switch_thumb_shadow_inset"
+                android:top="@dimen/gome_switch_thumb_shadow_inset_top">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_shadow"/>
+                </shape>
+            </item>
+            <item
+                android:bottom="@dimen/gome_switch_thumb_solid_inset"
+                android:gravity="center"
+                android:left="@dimen/gome_switch_thumb_solid_inset"
+                android:right="@dimen/gome_switch_thumb_solid_inset"
+                android:top="@dimen/gome_switch_thumb_solid_inset">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_normal"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- normal -->
+    <item>
+        <layer-list>
+            <item
+                android:gravity="center"
+                android:right="@dimen/gome_switch_thumb_shadow_inset"
+                android:bottom="@dimen/gome_switch_thumb_shadow_inset_bottom"
+                android:left="@dimen/gome_switch_thumb_shadow_inset"
+                android:top="@dimen/gome_switch_thumb_shadow_inset_top">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_shadow"/>
+                </shape>
+            </item>
+            <item
+                android:left="@dimen/gome_switch_thumb_solid_inset"
+                android:bottom="@dimen/gome_switch_thumb_solid_inset"
+                android:gravity="center"
+                android:top="@dimen/gome_switch_thumb_solid_inset"
+                android:right="@dimen/gome_switch_thumb_solid_inset">
+                <shape android:shape="oval">
+                    <solid android:color="@color/gome_switch_solid_dark_normal"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

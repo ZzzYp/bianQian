@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:gm="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:id="@+id/iv_menu_back"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="10dp"
+            android:paddingStart="12dp"
+            android:src="@drawable/ic_gome_icon_back"
+            app:srcCompat="@drawable/ic_gome_icon_back" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/iv_menu_complete"
+            style="@style/FinishStyle" />
+        >
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLength="7"
+            android:textColor="@color/item_title_color"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/actionBar_bottom_line_new"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

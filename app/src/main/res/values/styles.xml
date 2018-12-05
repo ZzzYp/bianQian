@@ -1,0 +1,148 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:actionBarStyle">@style/ActionbarStyle</item>
+        <item name="android:seekBarStyle">@android:style/Widget.DeviceDefault.SeekBar</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:windowBackground">@color/color_window_background</item>
+    </style>
+
+    <style name="ActionbarStyle" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionbarTitleStyle</item>
+        <item name="android:subtitleTextStyle">@style/ActionbarSubTitleStyle</item>
+    </style>
+
+    <style name="ActionbarTitleStyle">
+        <item name="android:textSize">@dimen/actionbar_title_text_size</item>
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
+
+    <style name="ActionbarSubTitleStyle">
+        <item name="android:textSize">@dimen/actionbar_subtitle_text_size</item>
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NoActionBar_Theme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary">#F1F2F3</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimaryDark">#F1F2F3</item>
+        <item name="android:navigationBarColor">#F1F2F3</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <style name="NoActionBar_Theme_Transparent" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary">#F1F2F3</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimaryDark">#F1F2F3</item>
+        <item name="android:navigationBarColor">#F1F2F3</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+
+    <style name="DeleteTextTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">180dp</item>
+        <item name="android:textSize">@dimen/common_textsize_30px</item>
+        <item name="android:textColor">@color/common_text_title_color</item>
+        <item name="android:layout_marginStart">@dimen/home_title_margin_left</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextContentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_textsize_26px</item>
+        <item name="android:layout_marginStart">@dimen/home_title_margin_left</item>
+        <item name="android:layout_marginEnd">@dimen/px_20</item>
+        <item name="android:textColor">@color/common_text_content_color</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_marginTop">@dimen/px_4</item>
+        <item name="android:ellipsize">end</item>
+
+    </style>
+
+    <style name="TextTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_textsize_30px</item>
+        <item name="android:textColor">@color/common_text_title_color</item>
+        <item name="android:layout_marginStart">@dimen/home_title_margin_left</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--finish style-->
+    <style name="FinishStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_gome_sys_ic_tag_number</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="CollectCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyGomeDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

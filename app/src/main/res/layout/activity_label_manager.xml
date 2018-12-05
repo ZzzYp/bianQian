@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gm="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_label_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/common_app_bar_layout" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_label_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_app_bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.gome.note.view.FloatActionMenuView.CustomFloatActionMenuView
+        android:id="@+id/ib_edit_label_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        gm:maxItems="2"
+        gm:menu="@menu/label_manage_edit_menu" />
+
+
+    <com.gome.note.view.FloatActionMenuView.CustomFloatActionMenuView
+        android:id="@+id/fl_delete_label_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="gone"
+        gm:maxItems="2"
+        gm:menu="@menu/label_manage_delete_menu" />
+
+
+</RelativeLayout>

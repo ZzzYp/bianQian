@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="bg_foot_h">140</integer>
+    <integer name="style_group_h">40</integer>
+    <integer name="background_item_h">100</integer>
+    <integer name="more_popu_padding">294</integer>
+    <integer name="more_popuwindow_xoff">164</integer>
+    <integer name="more_popuwindow_yoff">20</integer>
+    <integer name="more_popuwindow_width">160</integer>
+
+    <integer name="skin_bg_id_standard">1</integer>
+    <integer name="skin_bg_id_yellow">2</integer>
+    <integer name="skin_bg_id_green">3</integer>
+    <integer name="skin_bg_id_golden_autumn">4</integer>
+    <integer name="skin_bg_id_romance">5</integer>
+
+    <integer name="bg_item_15dp">15</integer>
+    <integer name="bg_item_0dp">0</integer>
+</resources>

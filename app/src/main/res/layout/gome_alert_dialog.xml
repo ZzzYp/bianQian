@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/titleDividerTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+
+        <!-- MODIFY BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dip"
+            android:layout_marginStart="16dip"
+            android:gravity="center_vertical|start"
+            android:orientation="horizontal" >
+            <!-- MODIFY END BY LIANG.SUN FOR DATEPICKER 20170620 -->
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dip"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:textSize="15sp"
+                android:textColor="#E6000000"
+                android:gravity="center_horizontal|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+        <!-- If the client uses a customTitle, it will be added here. -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:fitsSystemWindows="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:overScrollMode="ifContentScrolls">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="-1px"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:textSize="13sp"
+                    android:textColor="#73000000"
+                    android:lineSpacingExtra="2dp"
+                    android:fitsSystemWindows="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- MODIFY BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
+    <FrameLayout
+        android:id="@+id/customPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1" >
+        <!-- MODIFY END BY LIANG.SUN FOR DATEPICKER 20170620 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="-1px"
+            android:visibility="gone"
+            android:background="@android:color/transparent" />
+
+        <FrameLayout
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:visibility="gone"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerHorizontal"
+        android:dividerPadding="0dip"
+        android:minHeight="@dimen/alert_dialog_button_bar_height"
+        android:orientation="vertical"
+        android:showDividers="beginning" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:measureWithLargestChild="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/gome_alert_button_height"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/gome_alert_button_margin_10"
+                android:layout_marginRight="@dimen/gome_alert_button_margin_10"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/gome_alert_button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/gome_alert_button_margin_10"
+                android:layout_marginRight="@dimen/gome_alert_button_margin_10"
+                android:textSize="14sp"
+                android:textColor="@color/alertdialog_neturalbutton_text_color"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/gome_alert_button_height"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/gome_alert_button_margin_10"
+                android:layout_marginRight="@dimen/gome_alert_button_margin_10"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

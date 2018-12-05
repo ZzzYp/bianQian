@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/ck_item_add"
+        style="@style/CollectCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/ze_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ck_item_add"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:imeOptions="actionSend"
+        android:textColor="@color/font_black_4"
+        android:textSize="15sp"></TextView>
+
+</RelativeLayout>

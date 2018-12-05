@@ -1,0 +1,87 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_margin">0dp</dimen>
+    <dimen name="note_list_margin">3dp</dimen>
+    <dimen name="actionbar_title_text_size">17sp</dimen>
+    <dimen name="actionbar_subtitle_text_size">15sp</dimen>
+    <dimen name="no_content_top">160dp</dimen>
+    <!--common dp-->
+    <dimen name="px_20">10dp</dimen>
+    <dimen name="px_12">6dp</dimen>
+    <dimen name="px_1">0.5dp</dimen>
+    <dimen name="px_4">2dp</dimen>
+    <dimen name="px_24">12dp</dimen>
+    <dimen name="px_28">14dp</dimen>
+    <dimen name="px_38">19dp</dimen>
+    <dimen name="px_40px">20dp</dimen>
+    <dimen name="px_44">22dp</dimen>
+    <dimen name="px_60px">30dp</dimen>
+    <dimen name="px_162px">81dp</dimen>
+    <dimen name="px_30px">15dp</dimen>
+    <dimen name="px_36px">18dp</dimen>
+    <dimen name="px_16px">8dp</dimen>
+    <dimen name="px_8px">4dp</dimen>
+    <dimen name="px_4px">2dp</dimen>
+    <dimen name="px_128px">64dp</dimen>
+    <dimen name="px_136px">68dp</dimen>
+    <dimen name="px_138px">69dp</dimen>
+    <dimen name="px_120px">60dp</dimen>
+    <dimen name="px_240px">120dp</dimen>
+    <dimen name="px_94px">47dp</dimen>
+    <dimen name="px_94pxd">47dp</dimen>
+    <dimen name="px_74px">37dp</dimen>
+    <dimen name="px_70px">35dp</dimen>
+    <dimen name="px_80px">40dp</dimen>
+    <dimen name="px_90px">45dp</dimen>
+    <dimen name="px_160px">80dp</dimen>
+    <dimen name="px_26px">13dp</dimen>
+    <!--common text size-->
+    <dimen name="common_textsize_140px">70sp</dimen>
+    <dimen name="common_textsize_36px">18sp</dimen>
+    <dimen name="common_textsize_34px">17sp</dimen>
+    <dimen name="common_textsize_32px">16sp</dimen>
+    <dimen name="common_textsize_30px">15sp</dimen>
+    <dimen name="common_textsize_28px">14sp</dimen>
+    <dimen name="common_textsize_26px">13sp</dimen>
+    <dimen name="common_textsize_20px">10sp</dimen>
+    <dimen name="common_textsize_24px">12sp</dimen>
+    <dimen name="common_textsize_22px">11sp</dimen>
+    <dimen name="common_textsize_18px">9sp</dimen>
+    <dimen name="common_textsize_16px">8sp</dimen>
+
+    <dimen name="record_end_count_down">70sp</dimen>
+    <dimen name="mark_end_count_down">13sp</dimen>
+
+    <dimen name="scroll_to_0_150px">50dp</dimen>
+    <dimen name="scroll_to_150_0px">-50dp</dimen>
+
+    <dimen name="line_height">1px</dimen>
+
+    <!-- for new create pocket activity dialog -->
+    <dimen name="thumbnail_width">50dp</dimen>
+    <dimen name="thumbnail_height">50dp</dimen>
+    <dimen name="action_bar_height">42dp</dimen>
+
+
+    <dimen name="svg_icon_width_24dp">24dp</dimen>
+    <dimen name="svg_icon_height_24dp">24dp</dimen>
+
+    <dimen name="height_42dp">42dp</dimen>
+
+    <dimen name="bg_item_height_64dp">64dp</dimen>
+    <dimen name="bg_item_width_64dp">64dp</dimen>
+    <dimen name="bg_item_height_100dp">100dp</dimen>
+
+    <dimen name="searchview_tag_max_width">120dp</dimen>
+
+
+
+
+    <dimen name="float_menu_item_width">72dp</dimen>
+    <dimen name="float_menu_item_height">44dp</dimen>
+
+
+</resources>

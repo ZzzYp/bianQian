@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/rl_blankview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_dialog_bg"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thumbnail_height"
+            android:layout_marginLeft="@dimen/px_40px"
+            android:gravity="center_vertical"
+            android:text="@string/camera"
+            android:textColor="@color/font_black_2"
+            android:textSize="@dimen/common_textsize_26px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/px_40px"
+            android:background="@color/actionBar_bottom_line" />
+
+
+        <TextView
+            android:id="@+id/tv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thumbnail_height"
+            android:layout_marginLeft="@dimen/px_40px"
+            android:gravity="center_vertical"
+            android:text="@string/image"
+            android:textColor="@color/font_black_2"
+            android:textSize="@dimen/common_textsize_26px" />
+
+    </LinearLayout>
+</RelativeLayout>

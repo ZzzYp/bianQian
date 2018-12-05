@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="ImagePickerTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:colorPrimary">#F1F2F3</item>
+        <item name="android:colorPrimaryDark">#F1F2F3</item>
+        <item name="android:navigationBarColor">#F1F2F3</item>
+    </style>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <dimen name="alert_dialog_button_bar_height">48dp</dimen>
+    <dimen name="alert_dialog_title_height">45dp</dimen>
+
+    <dimen name="btn_gome_shape_radius">40dp</dimen>
+    <dimen name="btn_gome_text_size">13sp</dimen>
+    <dimen name="btn_gome_shape_border_width">1px</dimen>
+
+    <dimen name="seekbar_track_progress_height_gome">2dp</dimen>
+    <!--modify begin by sunliang for add GomeAlertDialog20170601-->
+    <dimen name="gome_alert_button_height">40dp</dimen>
+    <dimen name="gome_alert_button_margin_10">10dp</dimen>
+    <dimen name="gome_alert_button_margin_20">20dp</dimen>
+    <dimen name="alert_dialog_round_padding">27dip</dimen>
+    <!--modify end by sunliang for add GomeAlertDialog20170601-->
+
+    <!-- ADD BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170602 -->
+    <dimen name="action_button_min_width_overflow_material">36dp</dimen>
+    <dimen name="action_button_min_width_material">48dp</dimen>
+    <dimen name="action_button_min_height_material">48dp</dimen>
+    <dimen name="gome_action_button_min_width_overflow_material">60dp</dimen>
+    <dimen name="gome_action_button_min_width_material">48dp</dimen>
+    <dimen name="gome_action_button_min_height_material">48dp</dimen>
+    <dimen name="gome_floating_window_z">3dp</dimen>
+    <dimen name="gome_floatbutton_to_bottom_distance">10dp</dimen>
+    <!-- ADD END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170602 -->
+
+    <dimen name="gome_float_menu_item_height">44dp</dimen>
+    <dimen name="gome_float_menu_item_width_five">60dp</dimen>
+    <dimen name="gome_float_menu_item_width">72dp</dimen>
+    <dimen name="gome_float_menu_item_margin_default">6dp</dimen>
+    <dimen name="gome_float_menu_miniwidth">160dp</dimen>
+
+    <dimen name="gome_float_menu_item_margin_two">5dp</dimen>
+    <dimen name="gome_float_menu_item_margin_three">5dp</dimen>
+    <dimen name="gome_float_menu_item_margin_four">5dp</dimen>
+    <dimen name="gome_float_menu_item_margin_five">4dp</dimen>
+
+    <dimen name="gome_float_menu_side_margin_two">15dp</dimen>
+    <dimen name="gome_float_menu_side_margin_three">15dp</dimen>
+    <dimen name="gome_float_menu_side_margin_four">15dp</dimen>
+    <dimen name="gome_float_menu_side_margin_five">9dp</dimen>
+
+    <dimen name="gome_thumb_margin">2dp</dimen>
+    <dimen name="gome_thumb_width">16dp</dimen>
+    <dimen name="gome_thumb_height">16dp</dimen>
+    <dimen name="gome_switch_thumb_solid_inset">0dp</dimen>
+    <dimen name="gome_switch_thumb_shadow_inset">0dp</dimen>
+    <dimen name="gome_switch_thumb_shadow_inset_top">0dp</dimen>
+    <dimen name="gome_switch_thumb_shadow_inset_bottom">-1dp</dimen>
+    <item name="gome_track_measure_ratio" type="dimen" format="float">2.0</item>
+
+    <item format="float" name="highlight_alpha_gome_colored" type="dimen">0.26</item>
+
+    <dimen name="progress_bar_height_gome">2dp</dimen>
+
+    <dimen name="dropdownitem_icon_width">24dip</dimen>
+    <dimen name="dropdownitem_text_padding_left">6dip</dimen>
+    <dimen name="dropdownitem_text_padding_right">6dip</dimen>
+
+    <dimen name="action_button_min_width_overflow_gome">40dp</dimen>
+    <dimen name="action_button_min_height_gome">48dp</dimen>
+    <dimen name="action_button_min_width_gome">40dp</dimen>
+
+    <dimen name="float_action_button_icon_width">24dp</dimen>
+    <dimen name="float_action_button_icon_height">24dp</dimen>
+
+    <dimen name="text_size_menu_gome">13sp</dimen>
+    <dimen name="progress_spinner_height_gome">50dp</dimen>
+
+    <dimen name="text_size_title_gome_toolbar">15sp</dimen>
+    <dimen name="text_size_subtitle_gome_toolbar">12sp</dimen>
+
+    <dimen name="action_bar_elevation_gome">0dp</dimen>
+
+    <dimen name="gome_textsize_1">15sp</dimen>
+    <dimen name="gome_textsize_2">13sp</dimen>
+    <dimen name="gome_textsize_3">11sp</dimen>
+
+</resources>

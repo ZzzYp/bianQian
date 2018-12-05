@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/common_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_gome_icon_back"
+            app:srcCompat="@drawable/ic_gome_icon_back" />
+
+
+        <TextView
+            android:id="@+id/iv_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_menu_back"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_menu_cancel"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription=""
+            android:paddingEnd="10dp"
+            android:paddingStart="12dp"
+            android:src="@drawable/ic_gome_icon_cancel"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_gome_icon_cancel" />
+
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:maxLength="7"
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_all_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_gome_sys_ic_check_box_1"
+            android:text="@string/all_selected"
+            android:textColor="@color/font_blue_1"
+            android:textSize="0sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_all_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_gome_sys_ic_done"
+            android:text="@string/complete"
+            android:textColor="@color/font_blue_1"
+            android:textSize="0sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/line_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/actionBar_bottom_line_new" />
+</LinearLayout>

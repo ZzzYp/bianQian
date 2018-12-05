@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_memo_edit_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_background_yellow"
+    android:fillViewport="true"
+    android:visibility="gone">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gome_picture_memo_romance_tittle_bg"
+        android:fitsSystemWindows="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gome_picture_memo_romance_edit_bg" />
+
+</RelativeLayout>
