@@ -45,7 +45,7 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="NoActionBar_Theme" parent="@style/Theme.AppCompat.Light">
+    <style name="NoActionBar_Theme" parent="@style/Theme.GOME.Light">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:colorPrimary">#F1F2F3</item>
@@ -59,7 +59,7 @@
 
     </style>
 
-    <style name="NoActionBar_Theme_Transparent" parent="@style/Theme.AppCompat.Light">
+    <style name="NoActionBar_Theme_Transparent" parent="@style/Theme.GOME.Light">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:colorPrimary">#F1F2F3</item>
@@ -70,6 +70,11 @@
         <item name="android:splitMotionEvents">false</item>
         <item name="android:windowEnableSplitTouch">false</item>
         <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <style name="NoActionBar_Theme_Transparent_system" parent="Theme.AppCompat.Light.NoActionBar">
+
 
     </style>
 

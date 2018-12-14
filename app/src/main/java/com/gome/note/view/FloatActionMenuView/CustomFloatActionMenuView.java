@@ -6,7 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.NinePatchDrawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -358,7 +360,7 @@ public class CustomFloatActionMenuView extends FrameLayout {
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        if (mMenuPresenter != null) {
+        if(mMenuPresenter != null){
             mMenuPresenter.hideOverflowMenu();
         }
         getContext().unregisterReceiver(homeKeyReceiver);

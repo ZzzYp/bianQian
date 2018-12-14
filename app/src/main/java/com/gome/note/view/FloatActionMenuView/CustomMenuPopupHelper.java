@@ -6,11 +6,13 @@ package com.gome.note.view.FloatActionMenuView;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Parcelable;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.MeasureSpec;
 import android.view.ViewGroup;
@@ -22,6 +24,7 @@ import android.widget.ListAdapter;
 import android.widget.ListPopupWindow;
 import android.widget.PopupWindow;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.gome.note.R;
 
 import java.util.ArrayList;
@@ -29,6 +32,7 @@ import java.util.ArrayList;
 
 /**
  * Presents a menu as a small, simple popup anchored to another view.
+ *
  * @hide
  */
 public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, View.OnKeyListener,
@@ -56,10 +60,14 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
 
     private ViewGroup mMeasureParent;
 
-    /** Whether the cached content width value is valid. */
+    /**
+     * Whether the cached content width value is valid.
+     */
     private boolean mHasContentWidth;
 
-    /** Cached content width from {@link #measureContentWidth}. */
+    /**
+     * Cached content width from {@link #measureContentWidth}.
+     */
     private int mContentWidth;
 
     private int mDropDownGravity = Gravity.NO_GRAVITY;
@@ -73,12 +81,12 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
     }
 
     public CustomMenuPopupHelper(Context context, CustomMenuBuilder menu, View anchorView,
-                           boolean overflowOnly, int popupStyleAttr) {
+                                 boolean overflowOnly, int popupStyleAttr) {
         this(context, menu, anchorView, overflowOnly, popupStyleAttr, 0);
     }
 
     public CustomMenuPopupHelper(Context context, CustomMenuBuilder menu, View anchorView,
-                           boolean overflowOnly, int popupStyleAttr, int popupStyleRes) {
+                                 boolean overflowOnly, int popupStyleAttr, int popupStyleRes) {
         mContext = context;
         mInflater = LayoutInflater.from(context);
         mMenu = menu;
@@ -101,7 +109,7 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
     }
 
     public void setForceShowIcon(boolean forceShow) {
-        Log.d(TAG,"MenuPopupHelper forceShow :" + forceShow);
+        Log.d(TAG, "MenuPopupHelper forceShow :" + forceShow);
         mForceShowIcon = forceShow;
     }
 
@@ -128,7 +136,7 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
      * {@link #setAnchorView(View)}.
      *
      * @return {@code true} if the popup was shown or was already showing prior
-     *         to calling this method, {@code false} otherwise
+     * to calling this method, {@code false} otherwise
      */
     public boolean tryShow() {
         if (isShowing()) {
@@ -150,7 +158,7 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
                 CustomMenuPopupHelper.this.onDismiss();
             }
         });
-        Log.d(TAG,"set OnItem Click Listener");
+        Log.d(TAG, "set OnItem Click Listener");
         mPopup.setOnItemClickListener(this);
         mPopup.setAdapter(mAdapter);
         mPopup.setModal(true);
@@ -171,12 +179,55 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
             mContentWidth = measureContentWidth();
             mHasContentWidth = true;
         }
-
+        //mPopup.setBackgroundDrawable(mContext.getDrawable(R.drawable.shape_more_menu_bg));
+        mPopup.setBackgroundDrawable(mContext.getDrawable(R.drawable.gome_floataction_menu_9bg));
         mPopup.setContentWidth(mContentWidth);
         mPopup.setInputMethodMode(PopupWindow.INPUT_METHOD_NOT_NEEDED);
         mPopup.show();
         mPopup.getListView().setOnKeyListener(this);
+        //set more menu`s clicking or touching bg
+        setPopupSelectedBg(mPopup, mAdapter);
+
         return true;
+    }
+
+    private void setPopupSelectedBg(ListPopupWindow popup, MenuAdapter mAdapter) {
+        if (null != popup && null != mAdapter && null != popup.getListView()) {
+            popup.getListView().setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    int x = (int) event.getX();
+                    int y = (int) event.getY();
+                    int itemNum = popup.getListView().pointToPosition(x, y);
+                    if (itemNum == AdapterView.INVALID_POSITION) {
+                        return false;
+                    } else {
+                        if (itemNum == 0) {
+                            if (itemNum == (mAdapter.getCount() - 1)) {
+                                //only one item
+                                setSelectedBg(popup, mContext.getDrawable(R.drawable.gome_list_selector_onlyone));
+                            } else {
+                                //first item
+                                setSelectedBg(popup, mContext.getDrawable(R.drawable.gome_list_selector_first));
+                            }
+                        } else if (itemNum == (mAdapter.getCount() - 1)) {
+                            //last item
+                            setSelectedBg(popup, mContext.getDrawable(R.drawable.gome_list_selector_last));
+                        } else {
+                            //center item
+                            setSelectedBg(popup, mContext.getDrawable(R.drawable.gome_list_selector_normal));
+                        }
+                    }
+                    return false;
+                }
+
+            });
+        }
+    }
+
+    private void setSelectedBg(ListPopupWindow popup, Drawable drawable) {
+        if (null == popup || null == drawable || null == popup.getListView()) return;
+        popup.getListView().setSelector(drawable);
     }
 
     public void dismiss() {
@@ -204,8 +255,10 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         MenuAdapter adapter = mAdapter;
-        Log.d(TAG,"MenuPopupHelper onItemClick " + position);
+        Log.d(TAG, "MenuPopupHelper onItemClick " + position);
         adapter.mAdapterMenu.performItemAction(adapter.getItem(position), 0);
+
+
     }
 
     @Override
@@ -293,10 +346,10 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
         mHasContentWidth = false;
 
         if (mAdapter != null && mMenu != null) {
-            if(mMenu.getNonActionItems().size() == 0){
-                Log.d(TAG,"no NoActionItems, don't no anything");
-            }else{
-                Log.d(TAG,"refresh the PopupMenu");
+            if (mMenu.getNonActionItems().size() == 0) {
+                Log.d(TAG, "no NoActionItems, don't no anything");
+            } else {
+                Log.d(TAG, "refresh the PopupMenu");
                 mAdapter.notifyDataSetChanged();
             }
         }
@@ -328,7 +381,7 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
         return false;
     }
 
-    public boolean expandItemActionView(CustomMenuBuilder menu,CustomMenuItemImpl item) {
+    public boolean expandItemActionView(CustomMenuBuilder menu, CustomMenuItemImpl item) {
         return false;
     }
 
@@ -375,6 +428,13 @@ public class CustomMenuPopupHelper implements AdapterView.OnItemClickListener, V
                 position++;
             }
             return items.get(position);
+        }
+
+        public ArrayList<CustomMenuItemImpl> getItems() {
+            ArrayList<CustomMenuItemImpl> items = mOverflowOnly ?
+                    mAdapterMenu.getNonActionItems() : mAdapterMenu.getVisibleItems();
+
+            return items;
         }
 
         public long getItemId(int position) {

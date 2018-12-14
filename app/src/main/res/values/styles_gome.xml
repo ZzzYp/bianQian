@@ -124,28 +124,28 @@ easier.
 
 
     <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
-    <style name="Widget.GOME.PopupMenu.Overflow" parent="@android:style/Widget.Material.PopupMenu.Overflow">
-        <item name="android:overlapAnchor">false</item>
-        <item name="android:dropDownVerticalOffset">0dp</item>
-        <item name="android:popupBackground">@drawable/gome_popup_background</item>
-        <item name="android:popupElevation">@dimen/gome_floating_window_z</item>
+    <!--<style name="Widget.GOME.PopupMenu.Overflow" parent="@android:style/Widget.Material.PopupMenu.Overflow">-->
+        <!--<item name="android:overlapAnchor">false</item>-->
+        <!--<item name="android:dropDownVerticalOffset">0dp</item>-->
+        <!--<item name="android:popupBackground">@drawable/gome_popup_background</item>-->
+        <!--<item name="android:popupElevation">@dimen/gome_floating_window_z</item>-->
     <!--<item name="android:isRoundCornerStyle">true</item>-->
-</style>
+    <!--</style>-->
 
-<style name="Widget.GOME.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown">
-    <item name="android:divider">@drawable/gome_popup_menu_divider</item>
-    <item name="android:dividerHeight">1px</item>
-</style>
-<!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
-    <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
-    <style name="Widget.GOME.FloatMenu.Overflow" parent="@android:style/Widget.Material.PopupMenu.Overflow">
-        <item name="android:overlapAnchor">false</item>
-        <item name="android:dropDownVerticalOffset">-10dip</item>
-        <item name="android:popupBackground">@drawable/gome_popup_background</item>
-        <item name="android:popupElevation">@dimen/gome_floating_window_z</item>
-        <item name="android:popupEnterTransition">@transition/gome_float_menu_enter</item>
-        <item name="android:popupExitTransition">@transition/gome_float_menu_exit</item>
+    <style name="Widget.GOME.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown">
+        <item name="android:divider">@drawable/gome_popup_menu_divider</item>
+        <item name="android:dividerHeight">1px</item>
     </style>
+    <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
+    <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
+    <!--<style name="Widget.GOME.FloatMenu.Overflow" parent="@android:style/Widget.Material.PopupMenu.Overflow">-->
+        <!--<item name="android:overlapAnchor">false</item>-->
+        <!--<item name="android:dropDownVerticalOffset">-10dip</item>-->
+        <!--<item name="android:popupBackground">@drawable/gome_popup_background</item>-->
+        <!--<item name="android:popupElevation">@dimen/gome_floating_window_z</item>-->
+        <!--<item name="android:popupEnterTransition">@transition/gome_float_menu_enter</item>-->
+        <!--<item name="android:popupExitTransition">@transition/gome_float_menu_exit</item>-->
+    <!--</style>-->
     <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
 
     <!-- ADD BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
@@ -199,9 +199,9 @@ easier.
 
     <!--<style name="Widget.GOME.ProgressBar.Inverse"/>-->
 
-    <!--<style name="Widget.GOME.ProgressBar.Small" parent="@android:style/Widget.Material.ProgressBar.Small">-->
-        <!--<item name="android:indeterminateDrawable">@drawable/progress_small_gome</item>-->
-    <!--</style>-->
+    <style name="Widget.GOME.ProgressBar.Small" parent="@android:style/Widget.Material.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/progress_small_gome</item>
+    </style>
 
     <!--<style name="Widget.GOME.ProgressBar.Small.Inverse"/>-->
     <!--<style name="Widget.GOME.ProgressBar.Small.Title"/>-->
@@ -254,11 +254,11 @@ easier.
         <!--<item name="android:submitBackground">@empty</item>-->
     <!--</style>-->
 
-    <style name="Widget.GOME.ContextPopupMenu" parent="@android:style/Widget.Material.ListPopupWindow">
-        <item name="android:overlapAnchor">true</item>
-        <item name="android:popupBackground">@drawable/gome_popup_background</item>
-        <!-- <item name="android:isRoundCornerStyle">true</item>-->
-     </style>
+    <!--<style name="Widget.GOME.ContextPopupMenu" parent="@android:style/Widget.Material.ListPopupWindow">-->
+        <!--<item name="android:overlapAnchor">true</item>-->
+        <!--<item name="android:popupBackground">@drawable/gome_popup_background</item>-->
+        <!--&lt;!&ndash; <item name="android:isRoundCornerStyle">true</item>&ndash;&gt;-->
+     <!--</style>-->
      <style name="GomeActivityAnimationStyle">
          <item name="android:activityOpenEnterAnimation">@anim/gome_activity_open_enter</item>
          <item name="android:activityOpenExitAnimation">@anim/gome_activity_open_exit</item>
@@ -300,9 +300,9 @@ easier.
         <item name="android:maxLines">2</item>
     </style>
 
-    <style name="TextAppearance.GOME.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Large">
-        <item name="android:textSize">@dimen/text_size_menu_gome</item>
-    </style>
+    <!--<style name="TextAppearance.GOME.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Large">-->
+        <!--<item name="android:textSize">@dimen/text_size_menu_gome</item>-->
+    <!--</style>-->
 
     <style name="TextAppearance.GOME.Widget.Toolbar.Title" parent="@android:style/TextAppearance.Material.Widget.Toolbar.Title">
         <item name="android:textSize">@dimen/text_size_title_gome_toolbar</item>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/gome_vector_drawable_progressbar" >
+
+    <target
+        android:name="progressBarLeft"
+        android:animation="@anim/gome_progress_indeterminate_gome" />
+
+    <target
+        android:name="progressBarRight"
+        android:animation="@anim/gome_progress_indeterminate_gome" />
+
+    <target
+        android:name="root"
+        android:animation="@anim/gome_progress_indeterminate_rotation_material" />
+
+</animated-vector>

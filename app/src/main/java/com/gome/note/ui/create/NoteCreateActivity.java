@@ -63,7 +63,6 @@ import com.gome.note.manager.ViewManager;
 import com.gome.note.service.RecordServiceBinder;
 import com.gome.note.ui.create.adapter.BackgroundItemsAdapter;
 import com.gome.note.ui.create.presenter.NoteCreatePresenter;
-import com.gome.note.ui.home.NoteHomeActivity;
 import com.gome.note.ui.label.LabelManagerActivity;
 import com.gome.note.utils.ActivityCommonUtils;
 import com.gome.note.utils.DpUtils;
@@ -76,6 +75,7 @@ import com.gome.note.utils.XunFeiSpeechUtils;
 import com.gome.note.view.AlertDialog.CustomAlertDialog;
 import com.gome.note.view.ColoredLinearyLayout;
 import com.gome.note.view.ImageAndCameraDialog;
+import com.gome.note.view.ImmerseGroup;
 import com.gome.note.view.RecordDialog;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
@@ -85,7 +85,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
-
 
 import static com.gome.note.db.config.NoteConfig.NEED_CAMERA;
 import static com.gome.note.db.config.NoteConfig.REQUEST_LABELS;
@@ -165,6 +164,7 @@ public class NoteCreateActivity extends BaseActivity implements View.OnClickList
     private LinearLayout mClCoordinatorLayout;
     private View mTitlteBarLine;
     private boolean isContentSaved;
+    private ImmerseGroup immerseGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -220,6 +220,7 @@ public class NoteCreateActivity extends BaseActivity implements View.OnClickList
         initSkinBg();
         initView();
         initListener();
+
 
 
     }
@@ -279,6 +280,7 @@ public class NoteCreateActivity extends BaseActivity implements View.OnClickList
         mTitlteBarLine = findViewById(R.id.titlte_bar_line);
 
         mIvMenuBack = (ImageView) findViewById(R.id.iv_menu_back);
+        immerseGroup = findViewById(R.id.immerseGroup);
 
         mIvMenuBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1632,25 +1634,28 @@ public class NoteCreateActivity extends BaseActivity implements View.OnClickList
         switch (type) {
             case NoteConfig.RES_TYPE_COLOR:
                 int color = mBackgroundItemInfos.get(postion).getHeadResId();
-                mClCoordinatorLayout.setBackgroundColor(getResources().getColor(color, getTheme()));
+                //mClCoordinatorLayout.setBackgroundColor(getResources().getColor(color, getTheme()));
+                immerseGroup.setBackgroundColor(getResources().getColor(color, getTheme()));
                 mTitlteBarLine.setVisibility(View.VISIBLE);
                 break;
             case NoteConfig.RES_TYPE_DRAWABLE:
                 int resId = mBackgroundItemInfos.get(postion).getHeadResId();
-                mClCoordinatorLayout.setBackgroundResource(resId);
+                //mClCoordinatorLayout.setBackgroundResource(resId);
+                immerseGroup.setBackgroundResource(resId);
                 mTitlteBarLine.setVisibility(View.GONE);
                 break;
         }
 
         setTitleBarBgDisAttribute();
-        mClCoordinatorLayout.setFitsSystemWindows(true);
+        //mClCoordinatorLayout.setFitsSystemWindows(true);
+        immerseGroup.setFitsSystemWindows(true);
         mRlCreatRootView.setBackgroundColor(getResources().getColor(bgColor, getTheme()));
     }
 
     private void setTitleBarBgDisAttribute() {
         int statusBarHeight = ActivityCommonUtils.getStatusBarHeight(getApplicationContext());
-        mClCoordinatorLayout.setPadding(0, statusBarHeight, 0, 0);
-
+        //mClCoordinatorLayout.setPadding(0, statusBarHeight, 0, 0);
+        immerseGroup.setPadding(0, statusBarHeight, 0, 0);
 
     }
 

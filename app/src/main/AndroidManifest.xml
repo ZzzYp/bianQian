@@ -62,7 +62,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBar_Theme_Transparent"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustResize" />
 
         <service
             android:name=".service.RecordService"

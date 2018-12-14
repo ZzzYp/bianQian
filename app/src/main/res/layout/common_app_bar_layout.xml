@@ -98,8 +98,6 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="18dp"
             android:background="@drawable/ic_gome_sys_ic_done"
-            android:text="@string/complete"
-            android:textColor="@color/font_blue_1"
             android:textSize="0sp"
             android:visibility="gone" />
 

@@ -97,7 +97,7 @@
 
     <Button
         android:id="@+id/bt_complete"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.GOME.Light.Button"
         android:layout_width="160dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

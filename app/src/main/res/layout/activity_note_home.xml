@@ -58,6 +58,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginRight="20dp"
                 android:gravity="center_vertical"
+                style="@style/Widget.GOME.Light.CompoundButton.Double.CheckBox"
                 android:visibility="gone" />
 
         </RelativeLayout>

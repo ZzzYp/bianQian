@@ -125,6 +125,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="0"
+                    style="@style/Widget.GOME.Light.CompoundButton.CheckBox"
                     android:clickable="false" />
             </RelativeLayout>
 

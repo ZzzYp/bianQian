@@ -65,7 +65,7 @@ easier.
 
         <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
         <!-- Action Bar styles -->
-        <item name="android:actionOverflowMenuStyle">@style/Widget.GOME.PopupMenu.Overflow</item>
+        <!--<item name="android:actionOverflowMenuStyle">@style/Widget.GOME.PopupMenu.Overflow</item>-->
         <item name="android:dropDownListViewStyle">@style/Widget.GOME.ListView.DropDown</item>
         <item name="android:actionOverflowButtonStyle">@style/Widget.GOME.ActionButton.Overflow</item>
         <item name="android:actionButtonStyle">@style/Widget.GOME.ActionButton</item>
@@ -84,7 +84,7 @@ easier.
         <!-- CheckBox style-->
         <item name="android:checkboxStyle">@style/Widget.GOME.Light.CompoundButton.CheckBox</item>
         <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
-        <item name="gomeFloatMenuOverflowStyle">@style/Widget.GOME.FloatMenu.Overflow</item>
+        <!--<item name="gomeFloatMenuOverflowStyle">@style/Widget.GOME.FloatMenu.Overflow</item>-->
         <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
         <!-- ADD BEGIN BY ZHENJIE.CHANG FOR PROGRESS BAR STYLE -->
         <item name="android:colorAccent">@color/gome_color_control_actived</item>
@@ -111,7 +111,7 @@ easier.
         <!--<item name="android:switchPreferenceStyle">@style/Preference.GOME.SwitchPreference</item>-->
         <!--&lt;!&ndash;<item name="android:useGomeTheme">true</item> ADD BY LIANG.SUN FOR ALERTDIALOG 20170721 &ndash;&gt;-->
         <!--<item name="android:searchViewStyle">@style/Widget.GOME.SearchView</item>-->
-        <item name="android:contextPopupMenuStyle">@style/Widget.GOME.ContextPopupMenu</item>
+        <!--<item name="android:contextPopupMenuStyle">@style/Widget.GOME.ContextPopupMenu</item>-->
         <!-- add begin by JIAN.WANG for preference background -->
         <!--<item name="android:selectableItemBackground">@drawable/layout_background_selector</item>-->
         <!--<item name="android:selectableItemBackgroundBorderless">@drawable/layout_background_selector</item>-->
@@ -129,7 +129,7 @@ easier.
         <item name="android:scrollbarTrackVertical">@null</item>
 
         <!-- Text Styles -->
-        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.GOME.Widget.PopupMenu.Large</item>
+        <!--<item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.GOME.Widget.PopupMenu.Large</item>-->
         <item name="android:colorEdgeEffect">#1A000000</item>
         <!--<item name="android:windowAnimationStyle">@style/GomeActivityAnimationStyle</item>-->
     </style>
@@ -220,7 +220,7 @@ easier.
 
         <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
         <!-- Action Bar styles -->
-        <item name="android:actionOverflowMenuStyle">@style/Widget.GOME.PopupMenu.Overflow</item>
+        <!--<item name="android:actionOverflowMenuStyle">@style/Widget.GOME.PopupMenu.Overflow</item>-->
         <item name="android:dropDownListViewStyle">@style/Widget.GOME.ListView.DropDown</item>
         <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170601 -->
         <!-- ADD BEGIN BY LIANG.SUN FOR DATEPICKER 20170620 -->
@@ -234,7 +234,7 @@ easier.
         <!-- CheckBox style-->
         <item name="android:checkboxStyle">@style/Widget.GOME.Light.CompoundButton.CheckBox</item>
         <!-- MODIFIFY BEGIN BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
-        <item name="gomeFloatMenuOverflowStyle">@style/Widget.GOME.FloatMenu.Overflow</item>
+        <!--<item name="gomeFloatMenuOverflowStyle">@style/Widget.GOME.FloatMenu.Overflow</item>-->
         <!-- MODIFIFY END BY ZHENJIE.CHANG FOR ADD FLOAT ACTION MENU 20170706 -->
         <!-- Activity animation Styles -->
     </style>

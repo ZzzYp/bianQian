@@ -2,7 +2,11 @@ package com.gome.note.view.FloatActionMenuView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.NinePatchDrawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -45,31 +49,16 @@ public class ActionMenuView extends LinearLayout implements CustomMenuBuilder.It
     private boolean mReserveOverflow;
 
     public ActionMenuView(Context context) {
-        super(context);
-        this.init(context);
+        this(context, null);
     }
 
-    public ActionMenuView(Context context, @Nullable AttributeSet attrs) {
+    public ActionMenuView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.init(context);
-    }
-
-    public ActionMenuView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        this.init(context);
-    }
-
-    public ActionMenuView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        this.init(context);
-
-    }
-
-    private void init(Context context) {
+        final float density = context.getResources().getDisplayMetrics().density;
         setBaselineAligned(false);
         //为了只让ViewGrop的点击事件只被目标子视图获取，则设置为false
         setMotionEventSplittingEnabled(false);
-        float density = context.getResources().getDisplayMetrics().density;
+
         mGeneratedItemMargin = (int) context.getResources().getDimension(R.dimen.gome_float_menu_item_margin_default);
         mTwoItemMargin = (int) context.getResources().getDimension(R.dimen.gome_float_menu_item_margin_two);
         mThreeItemMargin = (int) context.getResources().getDimension(R.dimen.gome_float_menu_item_margin_three);
@@ -85,8 +74,10 @@ public class ActionMenuView extends LinearLayout implements CustomMenuBuilder.It
         mOneItemMargin = (int) (ONE_ITEM_MARGIN * density);
         mItemSizeDefault = (int) (ITEM_SIZE_DEFAULT * density);
         if (getBackground() == null) {
-            Drawable background = getResources().getDrawable(R.drawable.gome_floataction_bg, null);
-            setBackground(background);
+            final Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.gome_floataction_bg);
+            final byte[] chunk = bitmap.getNinePatchChunk();
+            NinePatchDrawable d = new NinePatchDrawable(getResources(), bitmap, chunk, new Rect(0, 0, 0, 10), null);
+            setBackground(d);
         }
     }
 
